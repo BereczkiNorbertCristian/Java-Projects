@@ -20,45 +20,44 @@ public class ProgramStateTest {
     ProgramState programState;
 
     @Before
-    public void setUp(){
+    public void setUp() {
 
-        IToyList<String> outList=new ToyList<String>();
-        IToyMap<String,Integer> symbolTable=new ToyMap<String,Integer>();
-        IToyStack<IStatement> exeStack=new ToyStack<IStatement>();
+        IToyList<String> outList = new ToyList<String>();
+        IToyMap<String, Integer> symbolTable = new ToyMap<String, Integer>();
+        IToyStack<IStatement> exeStack = new ToyStack<IStatement>();
 
-        programState=new ProgramState(exeStack,symbolTable,outList);
+        programState = new ProgramState(exeStack, symbolTable, outList);
 
     }
 
     @Test
-    public void allMethodsTest(){
+    public void allMethodsTest() {
 
         programState.setSymbolTable(new ToyMapMock());
 
-        IToyMap<String,Integer> symTable=programState.getSymbolTable();
+        IToyMap<String, Integer> symTable = programState.getSymbolTable();
 
         try {
-            Assert.assertEquals(3,symTable.lookup("a").intValue());
-        }
-        catch (Exception e){
+            Assert.assertEquals(3, symTable.lookup("a").intValue());
+        } catch (Exception e) {
             Assert.assertTrue(false);
         }
 
-        IToyList<String> out1=programState.getOut();
+        IToyList<String> out1 = programState.getOut();
 
         out1.add("23");
 
         programState.setOut(out1);
 
-        Assert.assertEquals("23",programState.getOut().get(0));
+        Assert.assertEquals("23", programState.getOut().get(0));
 
-        IToyStack<IStatement> exeStack1=programState.getExecutionStack();
+        IToyStack<IStatement> exeStack1 = programState.getExecutionStack();
 
         exeStack1.push(new PrintStatement(new ConstantExpression(3)));
 
         programState.setExecutionStack(exeStack1);
 
-        Assert.assertEquals(1,programState.getExecutionStack().size());
+        Assert.assertEquals(1, programState.getExecutionStack().size());
 
     }
 

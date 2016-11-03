@@ -18,24 +18,23 @@ public class CompoundStatementTest {
     IStatement compoundStatement;
 
     @Before
-    public void setUp(){
+    public void setUp() {
 
-        programState=new ProgramState(new ToyStack<IStatement>(),new ToyMap<String, Integer>(),new ToyList<String>());
+        programState = new ProgramState(new ToyStack<IStatement>(), new ToyMap<String, Integer>(), new ToyList<String>());
 
-        compoundStatement=new CompoundStatement(
+        compoundStatement = new CompoundStatement(
                 new PrintStatement(new ConstantExpression(8)),
-                new AssignmentStatement("ans",new ConstantExpression(4)));
+                new AssignmentStatement("ans", new ConstantExpression(4)));
 
     }
 
     @Test
-    public void executeTest(){
+    public void executeTest() {
 
         try {
             compoundStatement.execute(programState);
-            Assert.assertEquals(2,programState.getExecutionStack().size());
-        }
-        catch (Exception e){
+            Assert.assertEquals(2, programState.getExecutionStack().size());
+        } catch (Exception e) {
             System.err.println(e.getMessage());
             Assert.assertTrue(false);
         }
@@ -43,9 +42,9 @@ public class CompoundStatementTest {
     }
 
     @Test
-    public void toStringTest(){
+    public void toStringTest() {
 
-        Assert.assertEquals("print(8);ans=4",compoundStatement.toString());
+        Assert.assertEquals("print(8);ans=4", compoundStatement.toString());
 
     }
 

@@ -15,26 +15,25 @@ import org.junit.Test;
 public class VariableExpressionTest {
 
     Expression varExp;
-    IToyMap<String,Integer> table;
+    IToyMap<String, Integer> table;
 
     @Before
-    public void setUp(){
+    public void setUp() {
 
-        varExp=new VariableExpression("a");
-        table=new ToyMapMock();
+        varExp = new VariableExpression("a");
+        table = new ToyMapMock();
     }
 
     @Test
-    public void evalTest(){
+    public void evalTest() {
 
         try {
-            Assert.assertEquals(3,varExp.eval(table));
-        }
-        catch (Exception e){
+            Assert.assertEquals(3, varExp.eval(table));
+        } catch (Exception e) {
             Assert.assertTrue(false);
         }
 
-        Assert.assertEquals(1,varExp.toString().length());
+        Assert.assertEquals(1, varExp.toString().length());
     }
 
 }

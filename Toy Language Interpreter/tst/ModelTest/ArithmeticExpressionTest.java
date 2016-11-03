@@ -16,37 +16,35 @@ import org.junit.Test;
  */
 public class ArithmeticExpressionTest {
 
-    Expression arithExp1,arithExp2,arithExp3;
-    IToyMap<String,Integer> table;
+    Expression arithExp1, arithExp2, arithExp3;
+    IToyMap<String, Integer> table;
 
     @Before
-    public void setUp(){
+    public void setUp() {
 
-        arithExp1=new ArithmeticExpression(new ArithmeticExpression(new ConstantExpression(3),new ConstantExpression(4),3),
-                new ArithmeticExpression(new ConstantExpression(4),new ConstantExpression(3),4),1);
-        arithExp2=new ArithmeticExpression(new ConstantExpression(4),new ConstantExpression(3),2);
-        arithExp3=new ArithmeticExpression(new ConstantExpression(5),new ConstantExpression(0),4);
+        arithExp1 = new ArithmeticExpression(new ArithmeticExpression(new ConstantExpression(3), new ConstantExpression(4), 3),
+                new ArithmeticExpression(new ConstantExpression(4), new ConstantExpression(3), 4), 1);
+        arithExp2 = new ArithmeticExpression(new ConstantExpression(4), new ConstantExpression(3), 2);
+        arithExp3 = new ArithmeticExpression(new ConstantExpression(5), new ConstantExpression(0), 4);
     }
 
     @Test
-    public void evalTest(){
+    public void evalTest() {
 
         try {
-            Assert.assertEquals(13,arithExp1.eval(table));
-            Assert.assertEquals(1,arithExp2.eval(table));
-        }
-        catch (Exception e){
+            Assert.assertEquals(13, arithExp1.eval(table));
+            Assert.assertEquals(1, arithExp2.eval(table));
+        } catch (Exception e) {
             Assert.assertTrue(false);
         }
 
         try {
             arithExp3.eval(table);
             Assert.assertTrue(false);
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             Assert.assertTrue(true);
         }
-        Assert.assertEquals(7,arithExp1.toString().length());
+        Assert.assertEquals(7, arithExp1.toString().length());
 
     }
 }

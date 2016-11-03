@@ -5,6 +5,8 @@ import Controller.ProgramController;
 import Exceptions.ProgramControllerException;
 import Model.*;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -15,11 +17,12 @@ public class View {
 
     ProgramController ctrl;
     Scanner inputReader;
+    List<ProgramState> programs;
 
     public View(ProgramController ctrl) {
         this.ctrl = ctrl;
         inputReader = new Scanner(System.in);
-
+        programs = new ArrayList<>();
     }
 
     private void setUp() {
@@ -56,9 +59,9 @@ public class View {
         executionStack3.push(program3);
         ProgramState state3 = new ProgramState(executionStack3, symbolTable3, out3);
 
-        ctrl.addProgram(state1);
-        ctrl.addProgram(state2);
-        ctrl.addProgram(state3);
+        programs.add(state1);
+        programs.add(state2);
+        programs.add(state3);
 
     }
 
@@ -68,9 +71,29 @@ public class View {
 
         setUp();
 
-        System.out.print(preMenu());
-        int program = inputReader.nextInt();
-        ctrl.setCurrentProgram(program - 1);
+        boolean cool = false;
+        while (!cool) {
+            System.out.print(preMenu());
+            String program = inputReader.next();
+            cool = true;
+            switch (program) {
+                case "1":
+                    ctrl.addProgram(programs.get(0));
+
+                    break;
+                case "2":
+                    ctrl.addProgram(programs.get(1));
+                    break;
+                case "3":
+                    ctrl.addProgram(programs.get(2));
+                    break;
+                default:
+                    cool = false;
+                    System.out.println("Please introduce an option between 1,2,3");
+                    break;
+            }
+        }
+        ctrl.setCurrentProgram(0);
         int option;
         try {
             while (true) {

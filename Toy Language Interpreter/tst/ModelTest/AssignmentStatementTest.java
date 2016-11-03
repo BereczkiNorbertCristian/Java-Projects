@@ -19,30 +19,29 @@ public class AssignmentStatementTest {
     IStatement assignmentStatement;
 
     @Before
-    public void setUp(){
+    public void setUp() {
 
-        programState=new ProgramState(new ToyStack<IStatement>(),new ToyMap<String,Integer>(),new ToyList<String>());
+        programState = new ProgramState(new ToyStack<IStatement>(), new ToyMap<String, Integer>(), new ToyList<String>());
 
-        assignmentStatement=new AssignmentStatement("res",new ConstantExpression(4));
+        assignmentStatement = new AssignmentStatement("res", new ConstantExpression(4));
 
     }
 
     @Test
-    public void executeTest(){
+    public void executeTest() {
 
         try {
             assignmentStatement.execute(programState);
-            Assert.assertEquals(4,programState.getSymbolTable().lookup("res").intValue());
-        }
-        catch (Exception e){
+            Assert.assertEquals(4, programState.getSymbolTable().lookup("res").intValue());
+        } catch (Exception e) {
             Assert.assertTrue(false);
         }
     }
 
     @Test
-    public void toStringTest(){
+    public void toStringTest() {
 
-        Assert.assertEquals("res=4",assignmentStatement.toString());
+        Assert.assertEquals("res=4", assignmentStatement.toString());
 
     }
 }

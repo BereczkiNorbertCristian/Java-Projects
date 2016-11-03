@@ -12,46 +12,44 @@ import org.junit.Test;
  */
 public class ToyMapTest {
 
-    IToyMap<String,Integer> table;
+    IToyMap<String, Integer> table;
 
     @Before
-    public void setUp(){
-        table=new ToyMap<String,Integer>();
+    public void setUp() {
+        table = new ToyMap<String, Integer>();
     }
 
     @Test
-    public void lookupRemovePutTest(){
+    public void lookupRemovePutTest() {
 
-        table.put("a",3);
-        table.put("b",4);
+        table.put("a", 3);
+        table.put("b", 4);
         try {
-            Assert.assertEquals(3,table.lookup("a").intValue());
-            Assert.assertEquals(4,table.lookup("b").intValue());
-        }
-        catch (Exception e){
+            Assert.assertEquals(3, table.lookup("a").intValue());
+            Assert.assertEquals(4, table.lookup("b").intValue());
+        } catch (Exception e) {
             Assert.assertTrue(false);
         }
         table.remove("a");
-        try{
+        try {
             table.lookup("a");
             Assert.assertTrue(false);
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             Assert.assertTrue(true);
         }
     }
 
     @Test
-    public void sizeToStringTest(){
+    public void sizeToStringTest() {
 
-        table.put("a",3);
-        table.put("b",4);
+        table.put("a", 3);
+        table.put("b", 4);
 
-        Assert.assertEquals(2,table.size());
+        Assert.assertEquals(2, table.size());
 
-        String outToString=table.toString();
-        String toBeTested="b = 4\na = 3\n";
-        Assert.assertEquals(toBeTested,outToString);
+        String outToString = table.toString();
+        String toBeTested = "b = 4\na = 3\n";
+        Assert.assertEquals(toBeTested, outToString);
 
     }
 

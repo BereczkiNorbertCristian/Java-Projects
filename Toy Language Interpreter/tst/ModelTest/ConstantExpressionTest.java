@@ -16,24 +16,23 @@ import org.junit.Test;
 public class ConstantExpressionTest {
 
     Expression expression;
-    IToyMap<String,Integer> table;
+    IToyMap<String, Integer> table;
 
     @Before
-    public void setUp(){
-        expression=new ConstantExpression(4);
-        table=new ToyMapMock();
+    public void setUp() {
+        expression = new ConstantExpression(4);
+        table = new ToyMapMock();
     }
 
     @Test
-    public void evalTest(){
+    public void evalTest() {
 
         try {
-            Assert.assertEquals(4,expression.eval(table));
-        }
-        catch (Exception e){
+            Assert.assertEquals(4, expression.eval(table));
+        } catch (Exception e) {
             Assert.assertTrue(false);
         }
-        Assert.assertEquals(1,expression.toString().length());
+        Assert.assertEquals(1, expression.toString().length());
     }
 
 }

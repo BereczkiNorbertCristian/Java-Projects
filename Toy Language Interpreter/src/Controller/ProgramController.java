@@ -1,12 +1,11 @@
 package Controller;
 
-import Collections.IToyList;
+import Collections.*;
 import Exceptions.EmptyStackControllerException;
 import Exceptions.ProgramControllerException;
-import Model.IStatement;
-import Collections.IToyStack;
-import Model.ProgramState;
+import Model.*;
 import Repository.IStateRepository;
+import org.junit.Test;
 
 import java.util.List;
 
@@ -65,6 +64,10 @@ public class ProgramController {
         }
         statesRepository.updateProgram(executedOnceProgram);
 
+    }
+
+    public ProgramState getCurrentProgram() {
+        return statesRepository.getCurrentProgram();
     }
 
     public void allStep() throws ProgramControllerException {

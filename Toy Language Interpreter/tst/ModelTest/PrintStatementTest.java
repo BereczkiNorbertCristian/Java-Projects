@@ -19,33 +19,32 @@ public class PrintStatementTest {
     IStatement printStatement;
 
     @Before
-    public void setUp(){
+    public void setUp() {
 
-        IToyList<String> out=new ToyList<String>();
-        IToyMap<String,Integer> symTable=new ToyMap<String,Integer>();
-        IToyStack<IStatement> exeStack=new ToyStack<IStatement>();
+        IToyList<String> out = new ToyList<String>();
+        IToyMap<String, Integer> symTable = new ToyMap<String, Integer>();
+        IToyStack<IStatement> exeStack = new ToyStack<IStatement>();
 
-        printStatement=new PrintStatement(new ConstantExpression(4));
+        printStatement = new PrintStatement(new ConstantExpression(4));
 
-        programState=new ProgramState(exeStack,symTable,out);
+        programState = new ProgramState(exeStack, symTable, out);
     }
 
     @Test
-    public void executeTest(){
+    public void executeTest() {
 
         try {
             printStatement.execute(programState);
-            Assert.assertEquals("4",programState.getOut().get(0).trim());
-        }
-        catch (Exception e){
+            Assert.assertEquals("4", programState.getOut().get(0).trim());
+        } catch (Exception e) {
             Assert.assertTrue(false);
         }
     }
 
     @Test
-    public void toStringTest(){
+    public void toStringTest() {
 
-        Assert.assertEquals("print(4)",printStatement.toString());
+        Assert.assertEquals("print(4)", printStatement.toString());
 
     }
 
