@@ -5,7 +5,7 @@ package Collections;
  */
 public interface IToyList<T> {
 
-    void add(T element);
+    IToyList<T> add(T element);
 
     T remove(int idx);
 

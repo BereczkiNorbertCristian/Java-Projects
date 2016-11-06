@@ -4,6 +4,10 @@ import Collections.*;
 import Controller.ProgramController;
 import Exceptions.ProgramControllerException;
 import Model.*;
+import Model.Expressions.ArithmeticExpression;
+import Model.Expressions.ConstantExpression;
+import Model.Expressions.VariableExpression;
+import Model.Statements.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -71,6 +75,10 @@ public class View {
 
         setUp();
 
+        System.out.print("Introduce log file path:");
+        String logFilePath=inputReader.next();
+        ctrl.setLogFile(logFilePath);
+
         boolean cool = false;
         while (!cool) {
             System.out.print(preMenu());
@@ -101,16 +109,23 @@ public class View {
                 option = inputReader.nextInt();
                 if (option == 1) {
                     ctrl.oneStepCurrentProgram();
+                    System.out.println(ctrl.getCurrentProgram().toString());
                 } else {
                     ctrl.allStep();
                 }
-
             }
         } catch (ProgramControllerException e) {
-            System.out.println(e.getMessage());
+            if(ctrl.getProgramOuput().length() != 0){
+                System.out.println(ctrl.getProgramOuput());
+            }
+            System.out.println(e.getMessage().toUpperCase());
         }
 
         showOutput();
+
+        System.out.println("PROGRAM TERMINATED");
+
+
 
     }
 

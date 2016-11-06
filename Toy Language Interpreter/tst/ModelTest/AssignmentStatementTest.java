@@ -1,9 +1,9 @@
 package ModelTest;
 
 import Collections.*;
-import Model.AssignmentStatement;
-import Model.ConstantExpression;
-import Model.IStatement;
+import Model.Statements.AssignmentStatement;
+import Model.Expressions.ConstantExpression;
+import Model.Statements.IStatement;
 import Model.ProgramState;
 import org.junit.Assert;
 import org.junit.Before;

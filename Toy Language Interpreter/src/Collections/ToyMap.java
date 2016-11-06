@@ -3,6 +3,7 @@ package Collections;
 import Collections.IToyMap;
 import Exceptions.KeyNotFoundMapException;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -19,8 +20,9 @@ public class ToyMap<K, V> implements IToyMap<K, V> {
     }
 
     @Override
-    public void put(K key, V value) {
+    public IToyMap<K,V> put(K key, V value) {
         insideMap.put(key, value);
+        return this;
     }
 
     @Override
@@ -57,5 +59,9 @@ public class ToyMap<K, V> implements IToyMap<K, V> {
         return outMessage;
     }
 
+    @Override
+    public Collection<V> values(){
+        return insideMap.values();
+    }
 
 }

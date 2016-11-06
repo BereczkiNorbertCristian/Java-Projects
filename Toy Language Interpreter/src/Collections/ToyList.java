@@ -18,8 +18,9 @@ public class ToyList<T> implements IToyList<T> {
     }
 
     @Override
-    public void add(T element) {
+    public IToyList<T> add(T element) {
         insideList.add(element);
+        return this;
     }
 
     @Override

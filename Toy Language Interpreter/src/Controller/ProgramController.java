@@ -1,13 +1,10 @@
 package Controller;
 
 import Collections.*;
-import Exceptions.EmptyStackControllerException;
 import Exceptions.ProgramControllerException;
 import Model.*;
+import Model.Statements.IStatement;
 import Repository.IStateRepository;
-import org.junit.Test;
-
-import java.util.List;
 
 /**
  * Created by bnorbert on 22.10.2016.
@@ -17,8 +14,11 @@ public class ProgramController {
 
     IStateRepository statesRepository;
 
+    String programOuput;
+
     public ProgramController(IStateRepository statesRepository) {
         this.statesRepository = statesRepository;
+        this.programOuput ="";
     }
 
     public void addProgram(ProgramState programState) {
@@ -48,7 +48,7 @@ public class ProgramController {
             throw new ProgramControllerException(e.getMessage());
         }
 
-        System.out.println(newState.toString());
+        //System.out.println(newState.toString());
 
         return newState;
     }
@@ -70,15 +70,21 @@ public class ProgramController {
         return statesRepository.getCurrentProgram();
     }
 
-    public void allStep() throws ProgramControllerException {
+    public String allStep() throws ProgramControllerException {
         ProgramState program = statesRepository.getCurrentProgram();
         while (true) {
             try {
                 oneStep(program);
+                programOuput +=getCurrentProgram().toString();
+                statesRepository.logProgramState();
             } catch (Exception e) {
                 throw new ProgramControllerException(e.getMessage());
             }
         }
+    }
+
+    public String getProgramOuput(){
+        return programOuput;
     }
 
     public IToyList<String> getCurrentProgramOutput() {
@@ -86,6 +92,11 @@ public class ProgramController {
         return statesRepository.getCurrentProgram().getOut();
 
     }
+
+    public void setLogFile(String logFilePath){
+        statesRepository.setLogFile(logFilePath);
+    }
+
 
 
 }

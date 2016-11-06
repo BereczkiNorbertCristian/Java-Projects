@@ -4,11 +4,10 @@ import Collections.IToyMap;
 import Collections.ToyList;
 import Collections.ToyMap;
 import Collections.ToyStack;
-import Model.IStatement;
+import Model.Statements.IStatement;
 import Model.ProgramState;
 import Repository.IStateRepository;
 import Repository.StateRepository;
-import org.hamcrest.core.Is;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -26,8 +25,12 @@ public class StateRepositoryTest {
     public void setUp() {
 
         programState = new ProgramState(new ToyStack<IStatement>(), new ToyMap<String, Integer>(), new ToyList<String>());
-
-        repo = new StateRepository();
+        try {
+            repo = new StateRepository();
+        }
+        catch (Exception e){
+            Assert.assertTrue(false);
+        }
     }
 
     @Test

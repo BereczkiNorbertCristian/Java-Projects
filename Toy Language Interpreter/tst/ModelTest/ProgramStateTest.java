@@ -1,11 +1,10 @@
 package ModelTest;
 
 import Collections.*;
-import Controller.ProgramController;
 import Mocks.ToyMapMock;
-import Model.ConstantExpression;
-import Model.IStatement;
-import Model.PrintStatement;
+import Model.Expressions.ConstantExpression;
+import Model.Statements.IStatement;
+import Model.Statements.PrintStatement;
 import Model.ProgramState;
 import org.junit.Assert;
 import org.junit.Before;

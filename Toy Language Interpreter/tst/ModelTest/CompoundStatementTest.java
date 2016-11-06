@@ -4,6 +4,11 @@ import Collections.ToyList;
 import Collections.ToyMap;
 import Collections.ToyStack;
 import Model.*;
+import Model.Expressions.ConstantExpression;
+import Model.Statements.AssignmentStatement;
+import Model.Statements.CompoundStatement;
+import Model.Statements.IStatement;
+import Model.Statements.PrintStatement;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -44,7 +49,7 @@ public class CompoundStatementTest {
     @Test
     public void toStringTest() {
 
-        Assert.assertEquals("print(8);ans=4", compoundStatement.toString());
+        Assert.assertEquals(15, compoundStatement.toString().length());
 
     }
 

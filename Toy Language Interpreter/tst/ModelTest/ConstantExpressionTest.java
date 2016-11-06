@@ -1,10 +1,9 @@
 package ModelTest;
 
-import Collections.IToyList;
 import Collections.IToyMap;
 import Mocks.ToyMapMock;
-import Model.ConstantExpression;
-import Model.Expression;
+import Model.Expressions.ConstantExpression;
+import Model.Expressions.Expression;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

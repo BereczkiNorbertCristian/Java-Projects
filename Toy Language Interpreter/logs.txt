@@ -1,0 +1,72 @@
+THE EXECUTION STACK:
+print(a);
+b=2-2;
+IF(b) THEN {v=2} ELSE {v=3};
+print(v)
+a=3
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE EXECUTION STACK:
+print(a);
+b=2-2;
+IF(b) THEN {v=2} ELSE {v=3};
+print(v)
+THE SYMBOL TABLE:
+a = 3
+THE OUTPUT LIST:
+THE EXECUTION STACK:
+b=2-2;
+IF(b) THEN {v=2} ELSE {v=3};
+print(v)
+print(a)
+THE SYMBOL TABLE:
+a = 3
+THE OUTPUT LIST:
+THE EXECUTION STACK:
+b=2-2;
+IF(b) THEN {v=2} ELSE {v=3};
+print(v)
+THE SYMBOL TABLE:
+a = 3
+THE OUTPUT LIST:
+3 
+THE EXECUTION STACK:
+IF(b) THEN {v=2} ELSE {v=3};
+print(v)
+b=2-2
+THE SYMBOL TABLE:
+a = 3
+THE OUTPUT LIST:
+3 
+THE EXECUTION STACK:
+IF(b) THEN {v=2} ELSE {v=3};
+print(v)
+THE SYMBOL TABLE:
+b = 0
+a = 3
+THE OUTPUT LIST:
+3 
+THE EXECUTION STACK:
+print(v)
+IF(b) THEN {v=2} ELSE {v=3}
+THE SYMBOL TABLE:
+b = 0
+a = 3
+THE OUTPUT LIST:
+3 
+THE EXECUTION STACK:
+print(v)
+THE SYMBOL TABLE:
+v = 2
+b = 0
+a = 3
+THE OUTPUT LIST:
+3 
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 2
+b = 0
+a = 3
+THE OUTPUT LIST:
+3 
+2 

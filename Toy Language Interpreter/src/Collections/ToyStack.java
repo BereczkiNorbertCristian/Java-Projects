@@ -19,8 +19,9 @@ public class ToyStack<T> implements IToyStack<T> {
     }
 
     @Override
-    public void push(T element) {
+    public IToyStack<T> push(T element) {
         insideStack.push(element);
+        return this;
     }
 
     @Override

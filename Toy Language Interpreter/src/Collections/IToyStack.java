@@ -9,7 +9,7 @@ public interface IToyStack<T> {
 
     T pop() throws EmptyStackException;
 
-    void push(T elem);
+    IToyStack<T> push(T elem);
 
     int size();
 

@@ -2,8 +2,8 @@ package ModelTest;
 
 import Collections.IToyMap;
 import Mocks.ToyMapMock;
-import Model.Expression;
-import Model.VariableExpression;
+import Model.Expressions.Expression;
+import Model.Expressions.VariableExpression;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

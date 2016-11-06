@@ -1,7 +1,9 @@
 package Repository;
 
 import Model.ProgramState;
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -14,17 +16,27 @@ public class StateRepository implements IStateRepository {
 
     List<ProgramState> states;
     int currIdx;
+    File logFilePath;
 
-    public StateRepository() {
+    public StateRepository() throws IOException {
         states = new ArrayList<ProgramState>();
         currIdx = 0;
+        logFilePath=null;
     }
 
     @Override
-    public void addProgram(ProgramState programState) {
+    public IStateRepository addProgram(ProgramState programState) {
 
         states.add(programState);
+        return this;
     }
+
+    @Override
+    public void setLogFile(String logFilePath){
+
+        this.logFilePath=new File(logFilePath);
+    }
+
 
     @Override
     public void setCurrent(int idx) {
@@ -38,8 +50,23 @@ public class StateRepository implements IStateRepository {
     }
 
     @Override
-    public void updateProgram(ProgramState programState) {
+    public IStateRepository updateProgram(ProgramState programState) {
         states.set(currIdx, programState);
+        return this;
     }
+
+    @Override
+    public void logProgramState() throws IOException{
+
+        if(logFilePath != null) {
+
+            Writer logFileWriter = new PrintWriter(new FileWriter(logFilePath, true));
+
+            logFileWriter.write(getCurrentProgram().toString());
+
+            logFileWriter.close();
+        }
+    }
+
 
 }
