@@ -20,6 +20,7 @@ public class CloseFileStatement implements IStatement {
         this.variableFileId=variableFileId;
     }
 
+    @Override
     public ProgramState execute(ProgramState programState) throws Exception{
 
         BufferedReader bufferedReader;
@@ -35,6 +36,12 @@ public class CloseFileStatement implements IStatement {
         programState.getFileTable().remove(fileDescriptor);
 
         return programState;
+    }
+
+    @Override
+    public String toString(){
+
+        return "close("+variableFileId.toString()+")";
     }
 
 }

@@ -1,6 +1,7 @@
 package Model.Statements;
 
 import Collections.IToyMap;
+import Collections.UniqueTrie;
 import Model.Expressions.Expression;
 import Model.ProgramState;
 
@@ -25,6 +26,9 @@ public class AssignmentStatement implements IStatement {
         int value = expression.eval(symbolTable);
 
         symbolTable.put(variableId, value);
+
+        UniqueTrie uniqueNumberSet=state.getUniqueNumbersSet();
+        uniqueNumberSet.insertValue(value);
 
         return state;
     }

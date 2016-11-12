@@ -25,7 +25,7 @@ public class ProgramStateTest {
         IToyMap<String, Integer> symbolTable = new ToyMap<String, Integer>();
         IToyStack<IStatement> exeStack = new ToyStack<IStatement>();
 
-        programState = new ProgramState(exeStack, symbolTable, outList);
+        programState = new ProgramState(exeStack, symbolTable, outList,new FileTable());
 
     }
 

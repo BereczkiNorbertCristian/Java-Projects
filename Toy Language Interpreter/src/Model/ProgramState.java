@@ -6,6 +6,7 @@ import Collections.IToyStack;
 import Collections.UniqueTrie;
 import Model.Statements.IStatement;
 
+import javax.swing.*;
 import java.io.BufferedReader;
 
 /**
@@ -83,7 +84,8 @@ public class ProgramState {
 
         outString += "THE EXECUTION STACK:\n" + executionStack.toString() +
                 "THE SYMBOL TABLE:\n" + symbolTable.toString() +
-                "THE OUTPUT LIST:\n" + out.toString()
+                "THE OUTPUT LIST:\n" + out.toString() +
+                "\n"
         ;
 
         return outString;

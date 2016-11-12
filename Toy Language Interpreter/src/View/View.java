@@ -41,27 +41,22 @@ public class View {
                 new ConstantExpression(7), new ConstantExpression(2), 3), 1)), new CompoundStatement(new AssignmentStatement("b", new ArithmeticExpression(
                 new VariableExpression("a"), new ArithmeticExpression(new ConstantExpression(33), new ConstantExpression(2), 4), 1)),
                 new PrintStatement(new ArithmeticExpression(new VariableExpression("a"), new VariableExpression("b"), 1))));
+
         IStatement program3 = new CompoundStatement(new AssignmentStatement("a", new ConstantExpression(3)),
                 new CompoundStatement(new PrintStatement(new ConstantExpression(3)),
                         new AssignmentStatement("c", new ArithmeticExpression(new VariableExpression("a"), new ConstantExpression(0), 4))));
 
-        IToyList<String> out1 = new ToyList<String>();
         IToyStack<IStatement> executionStack1 = new ToyStack<IStatement>();
-        IToyMap<String, Integer> symbolTable1 = new ToyMap<String, Integer>();
         executionStack1.push(program1);
-        ProgramState state1 = new ProgramState(executionStack1, symbolTable1, out1);
+        ProgramState state1 = new ProgramState(executionStack1, new ToyMap<String,Integer>(), new ToyList<String>(),new FileTable());
 
-        IToyList<String> out2 = new ToyList<String>();
         IToyStack<IStatement> executionStack2 = new ToyStack<IStatement>();
-        IToyMap<String, Integer> symbolTable2 = new ToyMap<String, Integer>();
         executionStack2.push(program2);
-        ProgramState state2 = new ProgramState(executionStack2, symbolTable2, out2);
+        ProgramState state2 = new ProgramState(executionStack2, new ToyMap<String,Integer>(), new ToyList<String>(),new FileTable());
 
-        IToyList<String> out3 = new ToyList<String>();
         IToyStack<IStatement> executionStack3 = new ToyStack<IStatement>();
-        IToyMap<String, Integer> symbolTable3 = new ToyMap<String, Integer>();
         executionStack3.push(program3);
-        ProgramState state3 = new ProgramState(executionStack3, symbolTable3, out3);
+        ProgramState state3 = new ProgramState(executionStack3, new ToyMap<String,Integer>(), new ToyList<String>(),new FileTable());
 
         programs.add(state1);
         programs.add(state2);

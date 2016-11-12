@@ -1,5 +1,6 @@
 package ModelTest;
 
+import Collections.FileTable;
 import Collections.ToyList;
 import Collections.ToyMap;
 import Collections.ToyStack;
@@ -25,7 +26,7 @@ public class IfStatementTest {
     @Before
     public void setUp() {
 
-        programState = new ProgramState(new ToyStack<IStatement>(), new ToyMap<String, Integer>(), new ToyList<String>());
+        programState = new ProgramState(new ToyStack<IStatement>(), new ToyMap<String, Integer>(), new ToyList<String>(),new FileTable());
 
         ifStatement1 = new IfStatement(
                 new ConstantExpression(0),

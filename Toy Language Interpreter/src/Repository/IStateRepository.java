@@ -22,4 +22,5 @@ public interface IStateRepository {
 
     void logProgramState()throws IOException;
 
+    void logMessage(String message) throws IOException;
 }

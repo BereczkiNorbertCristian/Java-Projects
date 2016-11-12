@@ -29,16 +29,12 @@ public class OpenFileStatement implements IStatement {
             throw new FileExistException("The file already is opened");
         }
         BufferedReader bufferedReader;
-        try{
-            bufferedReader=new BufferedReader(new FileReader(filename));
-        }
-        catch (Exception e){
-            throw new IOException(e.getMessage());
-        }
+        bufferedReader=new BufferedReader(new FileReader(filename));
+
         Integer uniqueInteger=programState.getUniqueNumbersSet().uniqueValue();
 
         programState.getSymbolTable().put(variableFileId,uniqueInteger);
-        programState.getFileTable().put(uniqueInteger,new Pair<String, BufferedReader>(filename,bufferedReader));
+        programState.getFileTable().put(uniqueInteger,new Pair<>(filename,bufferedReader));
 
         return programState;
     }
@@ -54,4 +50,9 @@ public class OpenFileStatement implements IStatement {
 
     }
 
+    @Override
+    public String toString(){
+
+        return this.variableFileId + "=open("+this.filename+")";
+    }
 }

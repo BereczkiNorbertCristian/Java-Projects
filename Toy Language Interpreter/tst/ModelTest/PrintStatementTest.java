@@ -27,7 +27,7 @@ public class PrintStatementTest {
 
         printStatement = new PrintStatement(new ConstantExpression(4));
 
-        programState = new ProgramState(exeStack, symTable, out);
+        programState = new ProgramState(exeStack, symTable, out,new FileTable());
     }
 
     @Test

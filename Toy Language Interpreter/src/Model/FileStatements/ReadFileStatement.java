@@ -49,4 +49,10 @@ public class ReadFileStatement implements IStatement {
         return programState;
     }
 
+    @Override
+    public String toString(){
+
+        return variableName + "=readFromFile("+variableFileId.toString()+")";
+    }
+
 }

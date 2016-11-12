@@ -54,7 +54,7 @@ public class ProgramControllerTest {
 
         exeStack.push(program);
 
-        ProgramState programState = new ProgramState(exeStack, new ToyMap<String, Integer>(), new ToyList<String>());
+        ProgramState programState = new ProgramState(exeStack, new ToyMap<String, Integer>(), new ToyList<String>(),new FileTable());
 
         ctrl.addProgram(programState);
     }

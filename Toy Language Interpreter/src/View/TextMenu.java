@@ -18,7 +18,7 @@ public class TextMenu {
         commands=new HashMap<>();
     }
 
-    private void addCommand(Command c){
+    public void addCommand(Command c){
         commands.put(c.getKey(),c);
     }
 

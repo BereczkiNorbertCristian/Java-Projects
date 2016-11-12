@@ -6,6 +6,8 @@ import Model.*;
 import Model.Statements.IStatement;
 import Repository.IStateRepository;
 
+import java.io.IOException;
+
 /**
  * Created by bnorbert on 22.10.2016.
  * bnorbertcristian@gmail.com
@@ -39,13 +41,27 @@ public class ProgramController {
         try {
             currentStatement = executionStack.pop();
         } catch (Exception e) {
-            throw new ProgramControllerException("The execution stack is empty, there is nothing left to be executed");
+            String attachedLogError="";
+            try {
+                statesRepository.logMessage(e.getMessage());
+            }
+            catch (IOException ioe){
+                attachedLogError=ioe.getMessage();
+            }
+            throw new ProgramControllerException("The execution stack is empty, there is nothing left to be executed " + attachedLogError);
         }
         ProgramState newState;
         try {
             newState = currentStatement.execute(state);
         } catch (Exception e) {
-            throw new ProgramControllerException(e.getMessage());
+            String attachedLogError="";
+            try {
+                statesRepository.logMessage(e.getMessage());
+            }
+            catch (IOException ioe){
+                attachedLogError=ioe.getMessage();
+            }
+            throw new ProgramControllerException(e.getMessage()+attachedLogError);
         }
 
         //System.out.println(newState.toString());

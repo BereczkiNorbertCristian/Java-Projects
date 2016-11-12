@@ -21,7 +21,7 @@ public class AssignmentStatementTest {
     @Before
     public void setUp() {
 
-        programState = new ProgramState(new ToyStack<IStatement>(), new ToyMap<String, Integer>(), new ToyList<String>());
+        programState = new ProgramState(new ToyStack<IStatement>(), new ToyMap<String, Integer>(), new ToyList<String>(),new FileTable());
 
         assignmentStatement = new AssignmentStatement("res", new ConstantExpression(4));
 

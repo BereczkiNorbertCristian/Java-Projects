@@ -68,5 +68,19 @@ public class StateRepository implements IStateRepository {
         }
     }
 
+    @Override
+    public void logMessage(String message) throws IOException{
+
+        if(logFilePath != null){
+
+            Writer logFileWriter = new PrintWriter(new FileWriter(logFilePath,true));
+
+            logFileWriter.write(message+"\n");
+
+            logFileWriter.close();
+
+        }
+
+    }
 
 }

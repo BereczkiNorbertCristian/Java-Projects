@@ -1,9 +1,6 @@
 package RepositoryTest;
 
-import Collections.IToyMap;
-import Collections.ToyList;
-import Collections.ToyMap;
-import Collections.ToyStack;
+import Collections.*;
 import Model.Statements.IStatement;
 import Model.ProgramState;
 import Repository.IStateRepository;
@@ -24,7 +21,7 @@ public class StateRepositoryTest {
     @Before
     public void setUp() {
 
-        programState = new ProgramState(new ToyStack<IStatement>(), new ToyMap<String, Integer>(), new ToyList<String>());
+        programState = new ProgramState(new ToyStack<IStatement>(), new ToyMap<String, Integer>(), new ToyList<String>(),new FileTable());
         try {
             repo = new StateRepository();
         }
@@ -42,7 +39,7 @@ public class StateRepositoryTest {
 
         symTable.put("res", 3);
 
-        ProgramState state1 = new ProgramState(new ToyStack<IStatement>(), symTable, new ToyList<String>());
+        ProgramState state1 = new ProgramState(new ToyStack<IStatement>(), symTable, new ToyList<String>(),new FileTable());
 
         repo.updateProgram(state1);
 
