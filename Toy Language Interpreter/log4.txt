@@ -7,6 +7,7 @@ close(var_f)
 var_f=open(test.in)
 THE SYMBOL TABLE:
 THE OUTPUT LIST:
+THE FILETABLE:
 
 THE EXECUTION STACK:
 var_c=readFromFile(var_f);
@@ -17,6 +18,8 @@ close(var_f)
 THE SYMBOL TABLE:
 var_f = 0
 THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
 
 THE EXECUTION STACK:
 print(var_c);
@@ -27,6 +30,8 @@ var_c=readFromFile(var_f)
 THE SYMBOL TABLE:
 var_f = 0
 THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
 
 THE EXECUTION STACK:
 print(var_c);
@@ -34,9 +39,11 @@ IF(var_c) THEN {var_c=readFromFile(var_f);
 print(var_c)} ELSE {print(0)};
 close(var_f)
 THE SYMBOL TABLE:
-var_c = 3
+var_c = 15
 var_f = 0
 THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
 
 THE EXECUTION STACK:
 IF(var_c) THEN {var_c=readFromFile(var_f);
@@ -44,44 +51,54 @@ print(var_c)} ELSE {print(0)};
 close(var_f)
 print(var_c)
 THE SYMBOL TABLE:
-var_c = 3
+var_c = 15
 var_f = 0
 THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
 
 THE EXECUTION STACK:
 IF(var_c) THEN {var_c=readFromFile(var_f);
 print(var_c)} ELSE {print(0)};
 close(var_f)
 THE SYMBOL TABLE:
-var_c = 3
+var_c = 15
 var_f = 0
 THE OUTPUT LIST:
-3 
+15 
+THE FILETABLE:
+0 = test.in
 
 THE EXECUTION STACK:
 close(var_f)
 IF(var_c) THEN {var_c=readFromFile(var_f);
 print(var_c)} ELSE {print(0)}
 THE SYMBOL TABLE:
-var_c = 3
+var_c = 15
 var_f = 0
 THE OUTPUT LIST:
-3 
+15 
+THE FILETABLE:
+0 = test.in
 
 THE EXECUTION STACK:
 close(var_f)
 THE SYMBOL TABLE:
-var_c = 3
+var_c = 15
 var_f = 0
 THE OUTPUT LIST:
-3 
+15 
 0 
+THE FILETABLE:
+0 = test.in
 
 THE EXECUTION STACK:
 THE SYMBOL TABLE:
-var_c = 3
+var_c = 15
 var_f = 0
 THE OUTPUT LIST:
-3 
+15 
 0 
+THE FILETABLE:
 
+The stack is empty

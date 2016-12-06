@@ -1,22 +1,27 @@
 package Model.Expressions;
 
+import Collections.Heap;
 import Collections.IToyMap;
 import Exceptions.KeyNotFoundMapException;
 import Exceptions.VariableNotDefinedException;
 
+import java.io.Serializable;
+
 /**
  * Created by bnorbert on 22.10.2016.
  */
-public class VariableExpression extends Expression {
+public class VariableExpression extends Expression implements Serializable {
 
     String variableId;
+
+    public VariableExpression(){}
 
     public VariableExpression(String variableId) {
         this.variableId = variableId;
     }
 
     @Override
-    public int eval(IToyMap<String, Integer> symbolTable) throws VariableNotDefinedException {
+    public int eval(IToyMap<String, Integer> symbolTable, Heap<Integer> heap) throws VariableNotDefinedException {
 
         Integer lookedUp = null;
         try {

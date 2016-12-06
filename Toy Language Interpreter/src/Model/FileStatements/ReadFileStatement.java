@@ -8,15 +8,18 @@ import Model.Pair;
 import Model.ProgramState;
 
 import java.io.BufferedReader;
+import java.io.Serializable;
 
 /**
  * Created by bnorbert on 06.11.2016.
  * bnorbertcristian@gmail.com
  */
-public class ReadFileStatement implements IStatement {
+public class ReadFileStatement implements IStatement,Serializable {
 
     Expression variableFileId;
     String variableName;
+
+    public ReadFileStatement(){}
 
     public ReadFileStatement(Expression variableFileId,String variableName){
         this.variableFileId=variableFileId;
@@ -28,7 +31,7 @@ public class ReadFileStatement implements IStatement {
 
         Pair<String, BufferedReader> filenameBufferPair;
         try {
-            filenameBufferPair = programState.getFileTable().lookup(variableFileId.eval(programState.getSymbolTable()));
+            filenameBufferPair = programState.getFileTable().lookup(variableFileId.eval(programState.getSymbolTable(),programState.getHeap()));
         }
         catch (VariableNotDefinedException e){
             throw new FileNotExistsException("The file you tried to read from does not exit");
@@ -52,7 +55,7 @@ public class ReadFileStatement implements IStatement {
     @Override
     public String toString(){
 
-        return variableName + "=readFromFile("+variableFileId.toString()+")";
+        return variableName + "=readFromFile("+variableFileId.toString()+");";
     }
 
 }

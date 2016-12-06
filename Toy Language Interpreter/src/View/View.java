@@ -33,18 +33,18 @@ public class View {
 
         IStatement program1 = new CompoundStatement(new AssignmentStatement("a", new ConstantExpression(3)),
                 new CompoundStatement(new PrintStatement(new VariableExpression("a")), new CompoundStatement(new AssignmentStatement("b",
-                        new ArithmeticExpression(new ConstantExpression(2), new ConstantExpression(2), 2)), new CompoundStatement(new IfStatement(new VariableExpression("b"), new AssignmentStatement("v", new ConstantExpression(2)),
+                        new ArithmeticExpression(new ConstantExpression(2), new ConstantExpression(2), "-")), new CompoundStatement(new IfStatement(new VariableExpression("b"), new AssignmentStatement("v", new ConstantExpression(2)),
                         new AssignmentStatement("v", new ConstantExpression(3))),
                         new PrintStatement(new VariableExpression("v"))))));
 
         IStatement program2 = new CompoundStatement(new AssignmentStatement("a", new ArithmeticExpression(new ConstantExpression(5), new ArithmeticExpression(
-                new ConstantExpression(7), new ConstantExpression(2), 3), 1)), new CompoundStatement(new AssignmentStatement("b", new ArithmeticExpression(
-                new VariableExpression("a"), new ArithmeticExpression(new ConstantExpression(33), new ConstantExpression(2), 4), 1)),
-                new PrintStatement(new ArithmeticExpression(new VariableExpression("a"), new VariableExpression("b"), 1))));
+                new ConstantExpression(7), new ConstantExpression(2), "*"), "+")), new CompoundStatement(new AssignmentStatement("b", new ArithmeticExpression(
+                new VariableExpression("a"), new ArithmeticExpression(new ConstantExpression(33), new ConstantExpression(2), "/"), "+")),
+                new PrintStatement(new ArithmeticExpression(new VariableExpression("a"), new VariableExpression("b"), "+"))));
 
         IStatement program3 = new CompoundStatement(new AssignmentStatement("a", new ConstantExpression(3)),
                 new CompoundStatement(new PrintStatement(new ConstantExpression(3)),
-                        new AssignmentStatement("c", new ArithmeticExpression(new VariableExpression("a"), new ConstantExpression(0), 4))));
+                        new AssignmentStatement("c", new ArithmeticExpression(new VariableExpression("a"), new ConstantExpression(0), "/"))));
 
         IToyStack<IStatement> executionStack1 = new ToyStack<IStatement>();
         executionStack1.push(program1);

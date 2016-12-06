@@ -2,10 +2,12 @@ package Collections;
 
 import Exceptions.EmptyStackException;
 
+import java.io.Serializable;
+
 /**
  * Created by bnorbert on 14.10.2016.
  */
-public interface IToyStack<T> {
+public interface IToyStack<T> extends Serializable {
 
     T pop() throws EmptyStackException;
 

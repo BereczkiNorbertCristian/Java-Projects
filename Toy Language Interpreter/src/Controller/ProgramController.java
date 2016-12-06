@@ -6,6 +6,8 @@ import Model.*;
 import Model.Statements.IStatement;
 import Repository.IStateRepository;
 
+import static Controller.GarbageCollector.*;
+
 import java.io.IOException;
 
 /**
@@ -91,6 +93,9 @@ public class ProgramController {
         while (true) {
             try {
                 oneStep(program);
+                program.getHeap().setContent(conservativeGarbageCollector(program.getSymbolTable().values(),program.getHeap().getInsideMap()));
+
+
                 programOuput +=getCurrentProgram().toString();
                 statesRepository.logProgramState();
             } catch (Exception e) {

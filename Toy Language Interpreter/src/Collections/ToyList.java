@@ -2,6 +2,7 @@ package Collections;
 
 import Collections.IToyList;
 
+import java.io.Serializable;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.List;
 /**
  * Created by bnorbert on 21.10.2016.
  */
-public class ToyList<T> implements IToyList<T> {
+public class ToyList<T> implements IToyList<T>,Serializable {
 
     List<T> insideList;
 

@@ -3,15 +3,13 @@ package Collections;
 import Collections.IToyMap;
 import Exceptions.KeyNotFoundMapException;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.io.Serializable;
+import java.util.*;
 
 /**
  * Created by bnorbert on 21.10.2016.
  */
-public class ToyMap<K, V> implements IToyMap<K, V> {
+public class ToyMap<K, V> implements IToyMap<K, V>,Serializable {
 
     Map<K, V> insideMap;
 
@@ -23,6 +21,11 @@ public class ToyMap<K, V> implements IToyMap<K, V> {
     public IToyMap<K,V> put(K key, V value) {
         insideMap.put(key, value);
         return this;
+    }
+
+    @Override
+    public boolean containsKey(K key){
+        return insideMap.containsKey(key);
     }
 
     @Override
@@ -62,6 +65,11 @@ public class ToyMap<K, V> implements IToyMap<K, V> {
     @Override
     public Collection<V> values(){
         return insideMap.values();
+    }
+
+    @Override
+    public Set<Map.Entry<K,V>> getEntries(){
+        return insideMap.entrySet();
     }
 
 }

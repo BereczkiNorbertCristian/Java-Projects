@@ -1,5 +1,6 @@
 package ModelTest;
 
+import Collections.Heap;
 import Collections.IToyMap;
 import Mocks.ToyMapMock;
 import Model.Expressions.ConstantExpression;
@@ -16,18 +17,20 @@ public class ConstantExpressionTest {
 
     Expression expression;
     IToyMap<String, Integer> table;
+    Heap<Integer> heap;
 
     @Before
     public void setUp() {
         expression = new ConstantExpression(4);
         table = new ToyMapMock();
+        heap=new Heap<>();
     }
 
     @Test
     public void evalTest() {
 
         try {
-            Assert.assertEquals(4, expression.eval(table));
+            Assert.assertEquals(4, expression.eval(table,heap));
         } catch (Exception e) {
             Assert.assertTrue(false);
         }

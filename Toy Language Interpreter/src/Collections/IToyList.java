@@ -1,9 +1,11 @@
 package Collections;
 
+import java.io.Serializable;
+
 /**
  * Created by bnorbert on 21.10.2016.
  */
-public interface IToyList<T> {
+public interface IToyList<T> extends Serializable {
 
     IToyList<T> add(T element);
 

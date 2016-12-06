@@ -4,15 +4,19 @@ import Collections.IToyMap;
 import Model.Expressions.Expression;
 import Model.ProgramState;
 
+import java.io.Serializable;
+
 /**
  * Created by bnorbert on 22.10.2016.
  * bnorbertcristian@gmail.com
  */
-public class IfStatement implements IStatement {
+public class IfStatement implements IStatement,Serializable {
 
     Expression expression;
     IStatement thenStatement;
     IStatement elseStatement;
+
+    public IfStatement(){}
 
     public IfStatement(Expression expression, IStatement thenStatement, IStatement elseStatement) {
         this.expression = expression;
@@ -25,7 +29,7 @@ public class IfStatement implements IStatement {
 
         IToyMap<String, Integer> symbolTable = state.getSymbolTable();
 
-        int value = expression.eval(symbolTable);
+        int value = expression.eval(symbolTable,state.getHeap());
 
         ProgramState resultedState;
 

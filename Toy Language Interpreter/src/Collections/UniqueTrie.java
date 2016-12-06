@@ -1,22 +1,67 @@
 package Collections;
 
+import java.io.Serializable;
+
 /**
  * Created by bnorbert on 06.11.2016.
  * bnorbertcristian@gmail.com
  * Class for maintaining unique positive numbers with fast get and insert numbers in O(log(levels))
  */
-public class UniqueTrie {
+public class UniqueTrie implements Serializable {
 
-    public class TrieNode{
+    public class TrieNode implements Serializable{
 
         public TrieNode left,right;
         public int bit;
         public int numbersDown;
+
+
+        public TrieNode getLeft() {
+            return left;
+        }
+
+        public void setLeft(TrieNode left) {
+            this.left = left;
+        }
+
+        public TrieNode getRight() {
+            return right;
+        }
+
+        public void setRight(TrieNode right) {
+            this.right = right;
+        }
+
+        public int getBit() {
+            return bit;
+        }
+
+        public void setBit(int bit) {
+            this.bit = bit;
+        }
+
+        public int getNumbersDown() {
+            return numbersDown;
+        }
+
+        public void setNumbersDown(int numbersDown) {
+            this.numbersDown = numbersDown;
+        }
+
+
+
+        public TrieNode(){}
+
+
     }
 
 
     private final int levels;
     private TrieNode root;
+
+    public UniqueTrie(){this.levels=17;
+        root=createUniqueTrie(0,2);
+    }
 
     public UniqueTrie(int levels){
 

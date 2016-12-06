@@ -1,12 +1,19 @@
 package Model;
 
+import java.io.Serializable;
 import java.util.Map;
 
 /**
  * Created by bnorbert on 06.11.2016.
  * bnorbertcristian@gmail.com
  */
-public class Pair<K,V>{
+public class Pair<K,V> implements Serializable{
+
+
+    K first;
+    V second;
+
+    public Pair(){}
 
     public Pair(K first,V second){
         this.first=first;
@@ -22,7 +29,6 @@ public class Pair<K,V>{
         this.first = first;
     }
 
-    K first;
 
     public V getSecond() {
         return second;
@@ -32,8 +38,11 @@ public class Pair<K,V>{
         this.second = second;
     }
 
-    V second;
 
+    @Override
+    public String toString(){
+        return first.toString();
+    }
 
 
 

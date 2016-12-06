@@ -1,0 +1,171 @@
+THE EXECUTION STACK:
+while(v-4)
+print(v);
+v=v-1
+;
+print(v)
+v=6
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+THE EXECUTION STACK:
+while(v-4)
+print(v);
+v=v-1
+;
+print(v)
+THE SYMBOL TABLE:
+v = 6
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+THE EXECUTION STACK:
+print(v)
+while(v-4)
+print(v);
+v=v-1
+
+THE SYMBOL TABLE:
+v = 6
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+THE EXECUTION STACK:
+print(v)
+while(v-4)
+print(v);
+v=v-1
+
+print(v);
+v=v-1
+THE SYMBOL TABLE:
+v = 6
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+THE EXECUTION STACK:
+print(v)
+while(v-4)
+print(v);
+v=v-1
+
+v=v-1
+print(v)
+THE SYMBOL TABLE:
+v = 6
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+THE EXECUTION STACK:
+print(v)
+while(v-4)
+print(v);
+v=v-1
+
+v=v-1
+THE SYMBOL TABLE:
+v = 6
+THE OUTPUT LIST:
+6 
+THE FILETABLE:
+HEAP:
+
+THE EXECUTION STACK:
+print(v)
+while(v-4)
+print(v);
+v=v-1
+
+THE SYMBOL TABLE:
+v = 5
+THE OUTPUT LIST:
+6 
+THE FILETABLE:
+HEAP:
+
+THE EXECUTION STACK:
+print(v)
+while(v-4)
+print(v);
+v=v-1
+
+print(v);
+v=v-1
+THE SYMBOL TABLE:
+v = 5
+THE OUTPUT LIST:
+6 
+THE FILETABLE:
+HEAP:
+
+THE EXECUTION STACK:
+print(v)
+while(v-4)
+print(v);
+v=v-1
+
+v=v-1
+print(v)
+THE SYMBOL TABLE:
+v = 5
+THE OUTPUT LIST:
+6 
+THE FILETABLE:
+HEAP:
+
+THE EXECUTION STACK:
+print(v)
+while(v-4)
+print(v);
+v=v-1
+
+v=v-1
+THE SYMBOL TABLE:
+v = 5
+THE OUTPUT LIST:
+6 
+5 
+THE FILETABLE:
+HEAP:
+
+THE EXECUTION STACK:
+print(v)
+while(v-4)
+print(v);
+v=v-1
+
+THE SYMBOL TABLE:
+v = 4
+THE OUTPUT LIST:
+6 
+5 
+THE FILETABLE:
+HEAP:
+
+THE EXECUTION STACK:
+print(v)
+THE SYMBOL TABLE:
+v = 4
+THE OUTPUT LIST:
+6 
+5 
+THE FILETABLE:
+HEAP:
+
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 4
+THE OUTPUT LIST:
+6 
+5 
+4 
+THE FILETABLE:
+HEAP:
+
+The stack is empty

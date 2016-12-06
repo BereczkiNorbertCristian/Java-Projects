@@ -3,6 +3,7 @@ package Collections;
 import Collections.IToyStack;
 import Exceptions.EmptyStackException;
 
+import java.io.Serializable;
 import java.util.Iterator;
 import java.util.Stack;
 
@@ -10,7 +11,7 @@ import java.util.Stack;
  * Created by bnorbert on 14.10.2016.
  */
 
-public class ToyStack<T> implements IToyStack<T> {
+public class ToyStack<T> implements IToyStack<T>,Serializable {
 
     Stack<T> insideStack;
 

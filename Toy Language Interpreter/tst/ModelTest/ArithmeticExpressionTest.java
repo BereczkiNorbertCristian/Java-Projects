@@ -1,6 +1,8 @@
 package ModelTest;
 
+import Collections.Heap;
 import Collections.IToyMap;
+import Collections.ToyMap;
 import Model.Expressions.ArithmeticExpression;
 import Model.Expressions.ConstantExpression;
 import Model.Expressions.Expression;
@@ -16,28 +18,31 @@ public class ArithmeticExpressionTest {
 
     Expression arithExp1, arithExp2, arithExp3;
     IToyMap<String, Integer> table;
+    Heap<Integer> heap;
 
     @Before
     public void setUp() {
 
-        arithExp1 = new ArithmeticExpression(new ArithmeticExpression(new ConstantExpression(3), new ConstantExpression(4), 3),
-                new ArithmeticExpression(new ConstantExpression(4), new ConstantExpression(3), 4), 1);
-        arithExp2 = new ArithmeticExpression(new ConstantExpression(4), new ConstantExpression(3), 2);
-        arithExp3 = new ArithmeticExpression(new ConstantExpression(5), new ConstantExpression(0), 4);
+        arithExp1 = new ArithmeticExpression(new ArithmeticExpression(new ConstantExpression(3), new ConstantExpression(4), "*"),
+                new ArithmeticExpression(new ConstantExpression(4), new ConstantExpression(3), "/"), "+");
+        arithExp2 = new ArithmeticExpression(new ConstantExpression(4), new ConstantExpression(3), "-");
+        arithExp3 = new ArithmeticExpression(new ConstantExpression(5), new ConstantExpression(0), "/");
+        heap=new Heap<>();
+        table=new ToyMap<String,Integer>();
     }
 
     @Test
     public void evalTest() {
 
         try {
-            Assert.assertEquals(13, arithExp1.eval(table));
-            Assert.assertEquals(1, arithExp2.eval(table));
+            Assert.assertEquals(13, arithExp1.eval(table,heap));
+            Assert.assertEquals(1, arithExp2.eval(table,heap));
         } catch (Exception e) {
             Assert.assertTrue(false);
         }
 
         try {
-            arithExp3.eval(table);
+            arithExp3.eval(table,heap);
             Assert.assertTrue(false);
         } catch (Exception e) {
             Assert.assertTrue(true);

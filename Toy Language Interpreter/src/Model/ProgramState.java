@@ -1,24 +1,25 @@
 package Model;
 
-import Collections.IToyList;
-import Collections.IToyMap;
-import Collections.IToyStack;
-import Collections.UniqueTrie;
+import Collections.*;
+import Exceptions.SerializationException;
 import Model.Statements.IStatement;
 
 import javax.swing.*;
-import java.io.BufferedReader;
+import java.io.*;
 
 /**
  * Created by bnorbert on 21.10.2016.
  */
-public class ProgramState {
+public class ProgramState implements Serializable {
 
     private IToyStack<IStatement> executionStack;
     private IToyMap<String, Integer> symbolTable;
     private IToyList<String> out;
     private UniqueTrie uniqueNumbersSet;
     private IToyMap<Integer,Pair<String,BufferedReader>> fileTable;
+    private Heap<Integer> heap;
+    private transient final String fileSerializableName="test.ser";
+
 
     public IToyMap<Integer, Pair<String, BufferedReader>> getFileTable() {
         return fileTable;
@@ -41,6 +42,7 @@ public class ProgramState {
         this.out = out;
         this.uniqueNumbersSet=new UniqueTrie(17);
         this.fileTable=fileTable;
+        this.heap=new Heap<>();
     }
 
     public void setUniqueNumbersSet(UniqueTrie uniqueNumbersSet){
@@ -77,6 +79,14 @@ public class ProgramState {
         this.out = out;
     }
 
+    public Heap getHeap(){
+        return this.heap;
+    }
+
+    public void setHeap(Heap<Integer> heap){
+        this.heap=heap;
+    }
+
     @Override
     public String toString() {
 
@@ -85,10 +95,50 @@ public class ProgramState {
         outString += "THE EXECUTION STACK:\n" + executionStack.toString() +
                 "THE SYMBOL TABLE:\n" + symbolTable.toString() +
                 "THE OUTPUT LIST:\n" + out.toString() +
+                "THE FILETABLE:\n" + fileTable.toString() +
+                "HEAP:\n" + heap.toString() +
                 "\n"
         ;
 
         return outString;
+    }
+
+    public void serialize() throws SerializationException{
+
+        try{
+            FileOutputStream fileOut=
+                    new FileOutputStream(this.fileSerializableName);
+            ObjectOutputStream  out= new ObjectOutputStream(fileOut);
+            out.writeObject(this);
+            out.close();
+            fileOut.close();
+        }
+        catch (IOException ioe){
+            throw new SerializationException("Serialization Error:"+ioe.getMessage());
+        }
+    }
+
+    public ProgramState obtainSerializable() throws SerializationException{
+
+        try{
+
+            FileInputStream fileIn = new FileInputStream(fileSerializableName);
+            ObjectInputStream in = new ObjectInputStream(fileIn);
+
+            ProgramState programState;
+            programState=(ProgramState) in.readObject();
+            in.close();
+            fileIn.close();
+
+            return programState;
+        }
+        catch (IOException ioe){
+            throw new SerializationException("Error at Deserialising:"+ioe.getMessage());
+        }
+        catch (ClassNotFoundException cnfe){
+            throw new SerializationException("Error at Deserialising"+cnfe.getMessage());
+        }
+
     }
 
 

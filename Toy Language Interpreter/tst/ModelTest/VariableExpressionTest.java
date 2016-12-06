@@ -1,5 +1,6 @@
 package ModelTest;
 
+import Collections.Heap;
 import Collections.IToyMap;
 import Mocks.ToyMapMock;
 import Model.Expressions.Expression;
@@ -16,19 +17,21 @@ public class VariableExpressionTest {
 
     Expression varExp;
     IToyMap<String, Integer> table;
+    Heap<Integer> heap;
 
     @Before
     public void setUp() {
 
         varExp = new VariableExpression("a");
         table = new ToyMapMock();
+        heap=new Heap<Integer>();
     }
 
     @Test
     public void evalTest() {
 
         try {
-            Assert.assertEquals(3, varExp.eval(table));
+            Assert.assertEquals(3, varExp.eval(table,heap));
         } catch (Exception e) {
             Assert.assertTrue(false);
         }

@@ -8,15 +8,18 @@ import Model.ProgramState;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.Serializable;
 
 /**
  * Created by bnorbert on 06.11.2016.
  * bnorbertcristian@gmail.com
  */
-public class OpenFileStatement implements IStatement {
+public class OpenFileStatement implements IStatement,Serializable {
 
     private String variableFileId;
     private String filename;
+
+    public OpenFileStatement(){}
 
     public OpenFileStatement(String variableFileId,String filename){
         this.variableFileId=variableFileId;
@@ -53,6 +56,6 @@ public class OpenFileStatement implements IStatement {
     @Override
     public String toString(){
 
-        return this.variableFileId + "=open("+this.filename+")";
+        return this.variableFileId + "=open("+this.filename+");";
     }
 }

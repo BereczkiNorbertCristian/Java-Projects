@@ -2,13 +2,18 @@ package Model.Statements;
 
 import Collections.IToyStack;
 import Model.ProgramState;
+import View.Commands.Command;
+
+import java.io.Serializable;
 
 /**
  * Created by bnorbert on 21.10.2016.
  */
-public class CompoundStatement implements IStatement {
+public class CompoundStatement implements IStatement,Serializable {
     IStatement first;
     IStatement second;
+
+    public CompoundStatement(){}
 
     public CompoundStatement(IStatement first, IStatement second) {
         this.first = first;
