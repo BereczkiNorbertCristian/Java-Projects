@@ -89,7 +89,14 @@ public class ProgramController {
     }
 
     public String allStep() throws ProgramControllerException {
+
         ProgramState program = statesRepository.getCurrentProgram();
+        try {
+            program.serialize();
+        }
+        catch (Exception e){
+            throw new ProgramControllerException(e.getMessage());
+        }
         while (true) {
             try {
                 oneStep(program);
@@ -99,8 +106,15 @@ public class ProgramController {
                 programOuput +=getCurrentProgram().toString();
                 statesRepository.logProgramState();
             } catch (Exception e) {
+                try {
+                    statesRepository.getCurrentProgram().setState(program.obtainSerializable());
+                }
+                catch (Exception ee) {
+                    throw new ProgramControllerException(ee.getMessage());
+                }
                 throw new ProgramControllerException(e.getMessage());
             }
+
         }
     }
 

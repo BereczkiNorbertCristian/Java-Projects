@@ -20,6 +20,21 @@ public class ProgramState implements Serializable {
     private Heap<Integer> heap;
     private transient final String fileSerializableName="test.ser";
 
+    public void setState(ProgramState other){
+
+        if(other instanceof ProgramState){
+
+            this.heap=other.getHeap();
+            this.executionStack=other.getExecutionStack();
+            this.symbolTable=other.getSymbolTable();
+            this.out=other.getOut();
+            this.uniqueNumbersSet=other.getUniqueNumbersSet();
+            this.fileTable=other.getFileTable();
+
+        }
+
+    }
+
 
     public IToyMap<Integer, Pair<String, BufferedReader>> getFileTable() {
         return fileTable;
