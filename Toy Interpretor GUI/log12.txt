@@ -1,0 +1,331 @@
+PROGRAM ID:12
+THE EXECUTION STACK:
+v=10;
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+v=10
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+v=10
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+THE SYMBOL TABLE:
+v = 10
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+v=10;
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+v=10
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+v=10
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+THE SYMBOL TABLE:
+v = 10
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+THE SYMBOL TABLE:
+v = 10
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+a=new(22)
+THE SYMBOL TABLE:
+v = 10
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+a=new(22)
+THE SYMBOL TABLE:
+v = 10
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+THE SYMBOL TABLE:
+a = 1
+v = 10
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 22
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+v=10;
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+v=10
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+v=10;
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+v=10
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+v=10;
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+v=10
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+v=10
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+THE SYMBOL TABLE:
+v = 10
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+a=new(22);
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+THE SYMBOL TABLE:
+v = 10
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:12
+THE EXECUTION STACK:
+fork(WriteToHeap(a,30);
+v=32;
+print(v);
+print(ReadFromHeap(a)));
+print(v);
+print(ReadFromHeap(a))
+a=new(22)
+THE SYMBOL TABLE:
+v = 10
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
