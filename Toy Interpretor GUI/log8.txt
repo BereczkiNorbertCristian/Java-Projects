@@ -1,62 +1,74 @@
-PROGRAM ID:6
+PROGRAM ID:8
 THE EXECUTION STACK:
 v=10;
 v=new(20);
-a=new(20);
-print(v)
+a=new(22);
+WriteToHeap(a,30);
+print(a);
+print(ReadFromHeap(a))
 THE SYMBOL TABLE:
 THE OUTPUT LIST:
 THE FILETABLE:
 HEAP:
 
-PROGRAM ID:6
+PROGRAM ID:8
 THE EXECUTION STACK:
 v=new(20);
-a=new(20);
-print(v)
+a=new(22);
+WriteToHeap(a,30);
+print(a);
+print(ReadFromHeap(a))
 v=10
 THE SYMBOL TABLE:
 THE OUTPUT LIST:
 THE FILETABLE:
 HEAP:
 
-PROGRAM ID:6
+PROGRAM ID:8
 THE EXECUTION STACK:
 v=new(20);
-a=new(20);
-print(v)
+a=new(22);
+WriteToHeap(a,30);
+print(a);
+print(ReadFromHeap(a))
 v=10
 THE SYMBOL TABLE:
 THE OUTPUT LIST:
 THE FILETABLE:
 HEAP:
 
-PROGRAM ID:6
+PROGRAM ID:8
 THE EXECUTION STACK:
 v=new(20);
-a=new(20);
-print(v)
+a=new(22);
+WriteToHeap(a,30);
+print(a);
+print(ReadFromHeap(a))
 THE SYMBOL TABLE:
 v = 10
 THE OUTPUT LIST:
 THE FILETABLE:
 HEAP:
 
-PROGRAM ID:6
+PROGRAM ID:8
 THE EXECUTION STACK:
 v=new(20);
-a=new(20);
-print(v)
+a=new(22);
+WriteToHeap(a,30);
+print(a);
+print(ReadFromHeap(a))
 THE SYMBOL TABLE:
 v = 10
 THE OUTPUT LIST:
 THE FILETABLE:
 HEAP:
 
-PROGRAM ID:6
+PROGRAM ID:8
 THE EXECUTION STACK:
-a=new(20);
-print(v)
+a=new(22);
+WriteToHeap(a,30);
+print(a);
+print(ReadFromHeap(a))
 v=new(20)
 THE SYMBOL TABLE:
 v = 10
@@ -64,10 +76,12 @@ THE OUTPUT LIST:
 THE FILETABLE:
 HEAP:
 
-PROGRAM ID:6
+PROGRAM ID:8
 THE EXECUTION STACK:
-a=new(20);
-print(v)
+a=new(22);
+WriteToHeap(a,30);
+print(a);
+print(ReadFromHeap(a))
 v=new(20)
 THE SYMBOL TABLE:
 v = 10
@@ -75,10 +89,12 @@ THE OUTPUT LIST:
 THE FILETABLE:
 HEAP:
 
-PROGRAM ID:6
+PROGRAM ID:8
 THE EXECUTION STACK:
-a=new(20);
-print(v)
+a=new(22);
+WriteToHeap(a,30);
+print(a);
+print(ReadFromHeap(a))
 THE SYMBOL TABLE:
 v = 1
 THE OUTPUT LIST:
@@ -86,10 +102,12 @@ THE FILETABLE:
 HEAP:
 1 = 20
 
-PROGRAM ID:6
+PROGRAM ID:8
 THE EXECUTION STACK:
-a=new(20);
-print(v)
+a=new(22);
+WriteToHeap(a,30);
+print(a);
+print(ReadFromHeap(a))
 THE SYMBOL TABLE:
 v = 1
 THE OUTPUT LIST:
@@ -97,10 +115,12 @@ THE FILETABLE:
 HEAP:
 1 = 20
 
-PROGRAM ID:6
+PROGRAM ID:8
 THE EXECUTION STACK:
-print(v)
-a=new(20)
+WriteToHeap(a,30);
+print(a);
+print(ReadFromHeap(a))
+a=new(22)
 THE SYMBOL TABLE:
 v = 1
 THE OUTPUT LIST:
@@ -108,10 +128,12 @@ THE FILETABLE:
 HEAP:
 1 = 20
 
-PROGRAM ID:6
+PROGRAM ID:8
 THE EXECUTION STACK:
-print(v)
-a=new(20)
+WriteToHeap(a,30);
+print(a);
+print(ReadFromHeap(a))
+a=new(22)
 THE SYMBOL TABLE:
 v = 1
 THE OUTPUT LIST:
@@ -119,9 +141,11 @@ THE FILETABLE:
 HEAP:
 1 = 20
 
-PROGRAM ID:6
+PROGRAM ID:8
 THE EXECUTION STACK:
-print(v)
+WriteToHeap(a,30);
+print(a);
+print(ReadFromHeap(a))
 THE SYMBOL TABLE:
 a = 2
 v = 1
@@ -129,11 +153,13 @@ THE OUTPUT LIST:
 THE FILETABLE:
 HEAP:
 1 = 20
-2 = 20
+2 = 22
 
-PROGRAM ID:6
+PROGRAM ID:8
 THE EXECUTION STACK:
-print(v)
+WriteToHeap(a,30);
+print(a);
+print(ReadFromHeap(a))
 THE SYMBOL TABLE:
 a = 2
 v = 1
@@ -141,144 +167,13 @@ THE OUTPUT LIST:
 THE FILETABLE:
 HEAP:
 1 = 20
-2 = 20
+2 = 22
 
-PROGRAM ID:6
+PROGRAM ID:8
 THE EXECUTION STACK:
-THE SYMBOL TABLE:
-a = 2
-v = 1
-THE OUTPUT LIST:
-1 
-THE FILETABLE:
-HEAP:
-1 = 20
-2 = 20
-
-PROGRAM ID:6
-THE EXECUTION STACK:
-v=10;
-v=new(20);
-a=new(20);
-print(v)
-THE SYMBOL TABLE:
-THE OUTPUT LIST:
-THE FILETABLE:
-HEAP:
-
-PROGRAM ID:6
-THE EXECUTION STACK:
-v=new(20);
-a=new(20);
-print(v)
-v=10
-THE SYMBOL TABLE:
-THE OUTPUT LIST:
-THE FILETABLE:
-HEAP:
-
-PROGRAM ID:6
-THE EXECUTION STACK:
-v=new(20);
-a=new(20);
-print(v)
-v=10
-THE SYMBOL TABLE:
-THE OUTPUT LIST:
-THE FILETABLE:
-HEAP:
-
-PROGRAM ID:6
-THE EXECUTION STACK:
-v=new(20);
-a=new(20);
-print(v)
-THE SYMBOL TABLE:
-v = 10
-THE OUTPUT LIST:
-THE FILETABLE:
-HEAP:
-
-PROGRAM ID:6
-THE EXECUTION STACK:
-v=new(20);
-a=new(20);
-print(v)
-THE SYMBOL TABLE:
-v = 10
-THE OUTPUT LIST:
-THE FILETABLE:
-HEAP:
-
-PROGRAM ID:6
-THE EXECUTION STACK:
-a=new(20);
-print(v)
-v=new(20)
-THE SYMBOL TABLE:
-v = 10
-THE OUTPUT LIST:
-THE FILETABLE:
-HEAP:
-
-PROGRAM ID:6
-THE EXECUTION STACK:
-a=new(20);
-print(v)
-v=new(20)
-THE SYMBOL TABLE:
-v = 10
-THE OUTPUT LIST:
-THE FILETABLE:
-HEAP:
-
-PROGRAM ID:6
-THE EXECUTION STACK:
-a=new(20);
-print(v)
-THE SYMBOL TABLE:
-v = 1
-THE OUTPUT LIST:
-THE FILETABLE:
-HEAP:
-1 = 20
-
-PROGRAM ID:6
-THE EXECUTION STACK:
-a=new(20);
-print(v)
-THE SYMBOL TABLE:
-v = 1
-THE OUTPUT LIST:
-THE FILETABLE:
-HEAP:
-1 = 20
-
-PROGRAM ID:6
-THE EXECUTION STACK:
-print(v)
-a=new(20)
-THE SYMBOL TABLE:
-v = 1
-THE OUTPUT LIST:
-THE FILETABLE:
-HEAP:
-1 = 20
-
-PROGRAM ID:6
-THE EXECUTION STACK:
-print(v)
-a=new(20)
-THE SYMBOL TABLE:
-v = 1
-THE OUTPUT LIST:
-THE FILETABLE:
-HEAP:
-1 = 20
-
-PROGRAM ID:6
-THE EXECUTION STACK:
-print(v)
+print(a);
+print(ReadFromHeap(a))
+WriteToHeap(a,30)
 THE SYMBOL TABLE:
 a = 2
 v = 1
@@ -286,11 +181,13 @@ THE OUTPUT LIST:
 THE FILETABLE:
 HEAP:
 1 = 20
-2 = 20
+2 = 22
 
-PROGRAM ID:6
+PROGRAM ID:8
 THE EXECUTION STACK:
-print(v)
+print(a);
+print(ReadFromHeap(a))
+WriteToHeap(a,30)
 THE SYMBOL TABLE:
 a = 2
 v = 1
@@ -298,17 +195,96 @@ THE OUTPUT LIST:
 THE FILETABLE:
 HEAP:
 1 = 20
-2 = 20
+2 = 22
 
-PROGRAM ID:6
+PROGRAM ID:8
+THE EXECUTION STACK:
+print(a);
+print(ReadFromHeap(a))
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+
+PROGRAM ID:8
+THE EXECUTION STACK:
+print(a);
+print(ReadFromHeap(a))
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+
+PROGRAM ID:8
+THE EXECUTION STACK:
+print(ReadFromHeap(a))
+print(a)
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+
+PROGRAM ID:8
+THE EXECUTION STACK:
+print(ReadFromHeap(a))
+print(a)
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+
+PROGRAM ID:8
+THE EXECUTION STACK:
+print(ReadFromHeap(a))
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+
+PROGRAM ID:8
+THE EXECUTION STACK:
+print(ReadFromHeap(a))
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+
+PROGRAM ID:8
 THE EXECUTION STACK:
 THE SYMBOL TABLE:
 a = 2
 v = 1
 THE OUTPUT LIST:
-1 
+2 
+30 
 THE FILETABLE:
 HEAP:
 1 = 20
-2 = 20
+2 = 30
 

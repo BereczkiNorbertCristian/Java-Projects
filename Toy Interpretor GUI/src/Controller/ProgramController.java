@@ -45,6 +45,10 @@ public class ProgramController {
 
     }
 
+    public List<ProgramState> getProgramStates(){
+        return statesRepository.getProgramStates();
+    }
+
     @Deprecated
     public ProgramState oneStep(ProgramState state) throws ProgramControllerException {
 

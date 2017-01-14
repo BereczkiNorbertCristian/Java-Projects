@@ -29,9 +29,11 @@ import Controller.ProgramController;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 import javafx.util.Callback;
 
 import java.io.BufferedReader;
@@ -40,29 +42,57 @@ import java.util.*;
 public class Main extends Application {
 
     HBox root;
-    ListView<String> exeStackView,outView;
+    ListView<String> exeStackView,outView,forkedProgramsView;
     TableView<Pair<String,Integer>> symbolTableView;
     TableView<Pair<Integer,Integer>> heapView;
     TableView<Pair<Integer,Pair<String,BufferedReader>>> fileTableView;
-    ListView<EntryProgram> programStatesView;
+    ListView<EntryIdentifier> programStatesView;
     TextField noProgramsField;
     Button runOneStepButton;
-
-    List<EntryProgram> programs;
+    ProgramController programController;
 
 
     @Override
     public void start(Stage primaryStage) throws Exception{
 
         //Main entry of getting ready
-        //TO DO:div by 0 exception thrown
 
-
-        initData();
         initGUI(primaryStage);
         listenOnSelection();
         readyButton();
-        primaryStage.show();
+
+        Stage secondaryStage = new Stage();
+        SecondaryController secondaryController=new SecondaryController(secondaryStage);
+        readyOnHiddingSecondary(primaryStage,secondaryStage,secondaryController);
+        secondaryController.startSecondaryStage();
+
+    }
+
+    private void populateIdentifierList(){
+
+        List<ProgramState> programStates = programController.getProgramStates();
+        List<EntryIdentifier> entryIdentifiers=new ArrayList<>();
+        for(ProgramState program : programStates){
+
+            entryIdentifiers.add(new EntryIdentifier(program));
+        }
+        programStatesView.setItems(FXCollections.observableArrayList(entryIdentifiers));
+
+    }
+
+    private void readyOnHiddingSecondary(Stage primaryStage,Stage secondaryStage,SecondaryController secondaryController){
+
+
+        secondaryStage.setOnHiding(new EventHandler<WindowEvent>() {
+            @Override
+            public void handle(WindowEvent event) {
+                programController=secondaryController.getProgramController();
+
+                populateIdentifierList();
+                primaryStage.show();
+
+            }
+        });
     }
 
     public void readyButton(){
@@ -70,25 +100,36 @@ public class Main extends Application {
         runOneStepButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                EntryProgram selectedEntry=programStatesView.getSelectionModel().getSelectedItem();
-                int adder=1,idx=programStatesView.getSelectionModel().getSelectedIndices().get(0);
-                selectedEntry.getCtrl().allStepGUI();
-                if(idx == programs.size()-1){
-                    adder=-1;
-                }
-                programStatesView.getSelectionModel().select(idx+adder);
-                programStatesView.getSelectionModel().select(idx);
 
+                programStatesView.getSelectionModel().clearSelection();
+                clearDataInWindow();
+                programController.allStepGUI();
+                populateIdentifierList();
+                programStatesView.getSelectionModel().select(0);
+                noProgramsField.setText(Integer.toString(programController.getProgramStates().size()));
             }
         });
     }
 
-    public void listenOnSelection(){
+    private void clearDataInWindow(){
+        exeStackView.setItems(FXCollections.observableArrayList());
+        symbolTableView.setItems(FXCollections.observableArrayList());
+        outView.setItems(FXCollections.observableArrayList());
+        heapView.setItems(FXCollections.observableArrayList());
+        fileTableView.setItems(FXCollections.observableArrayList());
+    }
+
+    private void listenOnSelection(){
 
         programStatesView.getSelectionModel().selectedItemProperty().addListener(
-                new ChangeListener<EntryProgram>() {
+                new ChangeListener<EntryIdentifier>() {
                     @Override
-                    public void changed(ObservableValue<? extends EntryProgram> observable, EntryProgram oldValue, EntryProgram newValue) {
+                    public void changed(ObservableValue<? extends EntryIdentifier> observable, EntryIdentifier oldValue, EntryIdentifier newValue) {
+
+                        if(newValue == null){
+                            return;
+                        }
+                        System.out.println(programController.getProgramStates().size());
                         exeStackView.setItems(getExeStackOList(newValue));
                         symbolTableView.setItems(getSymbolTableOList(newValue));
                         outView.setItems(getOutOList(newValue));
@@ -100,9 +141,10 @@ public class Main extends Application {
 
     }
 
-    public ObservableList<Pair<Integer,Integer>> getHeapOList(EntryProgram entryProgram){
 
-        ProgramState state=entryProgram.getProgam();
+    public ObservableList<Pair<Integer,Integer>> getHeapOList(EntryIdentifier entryIdentifier){
+
+        ProgramState state=entryIdentifier.getProgram();
         List<Pair<Integer,Integer>> ret=new ArrayList<>();
         Iterator<Map.Entry<Integer,Integer>> iter=state.getHeap().iterator();
         while (iter.hasNext()){
@@ -112,9 +154,9 @@ public class Main extends Application {
         return FXCollections.observableArrayList(ret);
     }
 
-    public ObservableList<Pair<Integer,Pair<String,BufferedReader>>> getFileTableOList(EntryProgram entryProgram){
+    public ObservableList<Pair<Integer,Pair<String,BufferedReader>>> getFileTableOList(EntryIdentifier entryIdentifier){
 
-        ProgramState state=entryProgram.getProgam();
+        ProgramState state=entryIdentifier.getProgram();
         List<Pair<Integer,Pair<String,BufferedReader>>> ret=new ArrayList<>();
         Iterator<Map.Entry<Integer,Pair<String,BufferedReader>>> iter=state.getFileTable().iterator();
         while(iter.hasNext()){
@@ -125,8 +167,8 @@ public class Main extends Application {
 
     }
 
-    public ObservableList<String> getOutOList(EntryProgram entryProgram){
-        ProgramState state=entryProgram.getProgam();
+    public ObservableList<String> getOutOList(EntryIdentifier entryIdentifier){
+        ProgramState state=entryIdentifier.getProgram();
         List<String> ret=new ArrayList<>();
         Iterator<String> iter=state.getOut().iterator();
         while (iter.hasNext()){
@@ -135,8 +177,8 @@ public class Main extends Application {
         return FXCollections.observableArrayList(ret);
     }
 
-    public ObservableList<Pair<String,Integer>> getSymbolTableOList(EntryProgram entryProgram){
-        ProgramState state=entryProgram.getProgam();
+    public ObservableList<Pair<String,Integer>> getSymbolTableOList(EntryIdentifier entryIdentifier){
+        ProgramState state=entryIdentifier.getProgram();
         List<Pair<String,Integer>> ret=new ArrayList<>();
         Iterator<Map.Entry<String,Integer>> iter = state.getSymbolTable().iterator();
         while(iter.hasNext()){
@@ -147,9 +189,12 @@ public class Main extends Application {
         return FXCollections.observableArrayList(ret);
     }
 
-    public ObservableList<String> getExeStackOList(EntryProgram entryProgram){
+    public ObservableList<String> getExeStackOList(EntryIdentifier entryIdentifier){
 
-        ProgramState state=entryProgram.getProgam();
+        if(entryIdentifier == null){
+            System.out.println("ID");
+        }
+        ProgramState state=entryIdentifier.getProgram();
         List<String> ret=new ArrayList<>();
         Iterator<IStatement> iter = state.getExecutionStack().iterator();
         while(iter.hasNext()){
@@ -297,7 +342,9 @@ public class Main extends Application {
 
         runOneStepButton = new Button("Run One Step");
 
-        noProgramsField = new TextField(Integer.toString(programs.size()));
+        noProgramsField = new TextField(Integer.toString(1));
+
+        programStatesView = new ListView<>(FXCollections.observableArrayList());
 
         rightPane.getChildren().add(new Label("Program States"));
         rightPane.getChildren().add(programStatesView);
@@ -307,314 +354,12 @@ public class Main extends Application {
     }
 
 
+
+
     public static void main(String[] args) {
         launch(args);
     }
 
-    private void initData(){
 
-        // 1 --------------------------------------------------
-        IStatement program1 = new CompoundStatement(new AssignmentStatement("a", new ConstantExpression(3)),
-                new CompoundStatement(new PrintStatement(new VariableExpression("a")), new CompoundStatement(new AssignmentStatement("b",
-                        new ArithmeticExpression(new ConstantExpression(2), new ConstantExpression(2), "-")), new CompoundStatement(new IfStatement(new VariableExpression("b"), new AssignmentStatement("v", new ConstantExpression(2)),
-                        new AssignmentStatement("v", new ConstantExpression(3))),
-                        new PrintStatement(new VariableExpression("v"))))));
-
-        IToyStack<IStatement> executionStack1 = new ToyStack<>();
-        executionStack1.push(program1);
-        ProgramState state1 = new ProgramState(executionStack1, new ToyMap<String, Integer>(), new ToyList<>(),new FileTable(),1);
-
-        // 2 --------------------------------------------------
-        IStatement program2 = new CompoundStatement(new AssignmentStatement("a", new ArithmeticExpression(new ConstantExpression(5), new ArithmeticExpression(
-                new ConstantExpression(7), new ConstantExpression(2), "*"), "+")), new CompoundStatement(new AssignmentStatement("b", new ArithmeticExpression(
-                new VariableExpression("a"), new ArithmeticExpression(new ConstantExpression(33), new ConstantExpression(2), "/"), "+")),
-                new PrintStatement(new ArithmeticExpression(new VariableExpression("a"), new VariableExpression("b"), "+"))));
-
-
-        IToyStack<IStatement> executionStack2 = new ToyStack<>();
-        executionStack2.push(program2);
-        ProgramState state2 = new ProgramState(executionStack2, new ToyMap<String,Integer>(), new ToyList<String>(),new FileTable(),2);
-
-        // 3 ---------------------------------------------------
-        IStatement program3 = new CompoundStatement(new AssignmentStatement("a", new ConstantExpression(3)),
-                new CompoundStatement(new PrintStatement(new ConstantExpression(3)),
-                        new AssignmentStatement("c", new ArithmeticExpression(new VariableExpression("a"), new ConstantExpression(0), "/"))));
-
-        IToyStack<IStatement> executionStack3 = new ToyStack<IStatement>();
-        executionStack3.push(program3);
-        ProgramState state3 = new ProgramState(executionStack3, new ToyMap<String,Integer>(), new ToyList<String>(),new FileTable(),3);
-
-        // 4
-        IStatement program4 = new CompoundStatement(new OpenFileStatement("var_f","test.in"),
-                new CompoundStatement(
-                        new ReadFileStatement(new VariableExpression("var_f"),"var_c"),
-                        new CompoundStatement(
-                                new PrintStatement(new VariableExpression("var_c")),
-                                new CompoundStatement(
-                                        new IfStatement(
-                                                new VariableExpression("var_c"),
-                                                new CompoundStatement(
-                                                        new ReadFileStatement(new VariableExpression("var_f"),"var_c"),
-                                                        new PrintStatement(new VariableExpression("var_c"))),
-                                                new PrintStatement(new ConstantExpression(0)))
-                                        ,
-                                        new CloseFileStatement(new VariableExpression("var_f"))
-                                ))));
-        IToyStack<IStatement> executionStack4=new ToyStack<>();
-        executionStack4.push(program4);
-        ProgramState state4=new ProgramState(executionStack4,new ToyMap<String,Integer>(),new ToyList<String>(),new FileTable(),4);
-
-        // 5
-        IStatement program5=new CompoundStatement(new OpenFileStatement("var_f","test.in"),
-                new CompoundStatement(
-                        new ReadFileStatement(
-                                new ArithmeticExpression(
-                                        new VariableExpression("var_f"),
-                                        new ConstantExpression(2),
-                                        "+"),
-                                "var_c"),
-                        new CompoundStatement(
-                                new PrintStatement(new VariableExpression("var_c")),
-                                new CompoundStatement(
-                                        new IfStatement(
-                                                new VariableExpression("var_c"),
-                                                new CompoundStatement(
-                                                        new ReadFileStatement(new VariableExpression("var_f"),"var_c"),
-                                                        new PrintStatement(new VariableExpression("var_c"))),
-                                                new PrintStatement(new ConstantExpression(0)))
-                                        ,
-                                        new CloseFileStatement(new VariableExpression("var_f"))
-                                ))));
-        IToyStack<IStatement> executionStack5=new ToyStack<>();
-        executionStack5.push(program5);
-        ProgramState state5=new ProgramState(executionStack5,new ToyMap<String,Integer>(),new ToyList<String>(),new FileTable(),5);
-
-        // 6
-        IStatement program6=new CompoundStatement(
-                new AssignmentStatement("v",new ConstantExpression(10)),
-                new CompoundStatement(
-                        new NewStatement("v",new ConstantExpression(20)),
-                        new CompoundStatement(
-                                new NewStatement("a",new ConstantExpression(20)),
-                                new PrintStatement(new VariableExpression("v"))
-                        )));
-        IToyStack<IStatement> executionStack6=new ToyStack<>();
-        executionStack6.push(program6);
-        ProgramState state6=new ProgramState(executionStack6,new ToyMap<String, Integer>(),new ToyList<String>(),new FileTable(),6);
-
-        // 7
-        IStatement program7=new CompoundStatement(
-                new AssignmentStatement("v",new ConstantExpression(10)),
-                new CompoundStatement(
-                        new NewStatement("v",new ConstantExpression(20)),
-                        new CompoundStatement(
-                                new NewStatement("a",new ConstantExpression(22)),
-                                new CompoundStatement(
-                                        new PrintStatement(new ArithmeticExpression(new ConstantExpression(100),new ReadHeapExpression("v"),"+")),
-                                        new PrintStatement(new ArithmeticExpression(new ConstantExpression(100),new ReadHeapExpression("a"),"+")))
-                        )
-                )
-        );
-        IToyStack<IStatement> executionStack7=new ToyStack<>();
-        executionStack7.push(program7);
-        ProgramState state7=new ProgramState(executionStack7,new ToyMap<String, Integer>(),new ToyList<String>(),new FileTable(),7);
-
-        // 8
-        IStatement program8=new CompoundStatement(
-                new AssignmentStatement("v",new ConstantExpression(10)),
-                new CompoundStatement(
-                        new NewStatement("v",new ConstantExpression(20)),
-                        new CompoundStatement(
-                                new NewStatement("a",new ConstantExpression(22)),
-                                new CompoundStatement(
-                                        new WriteHeapStatement("a",new ConstantExpression(30)),
-                                        new CompoundStatement(
-                                                new PrintStatement(new VariableExpression("a")),
-                                                new PrintStatement(new ReadHeapExpression("a"))
-                                        )
-                                )
-                        )
-                )
-        );
-        IToyStack<IStatement> executionStack8=new ToyStack<>();
-        executionStack8.push(program8);
-        ProgramState state8=new ProgramState(executionStack8,new ToyMap<String, Integer>(),new ToyList<String>(),new FileTable(),8);
-
-        // 9
-        IStatement program9=new CompoundStatement(
-                new AssignmentStatement("v",new ConstantExpression(10)),
-                new CompoundStatement(
-                        new NewStatement("v",new ConstantExpression(20)),
-                        new CompoundStatement(
-                                new NewStatement("a",new ConstantExpression(22)),
-                                new CompoundStatement(
-                                        new WriteHeapStatement("a",new ConstantExpression(30)),
-                                        new CompoundStatement(
-                                                new PrintStatement(new VariableExpression("a")),
-                                                new CompoundStatement(
-                                                        new PrintStatement(new ReadHeapExpression("a")),
-                                                        new AssignmentStatement("a",new ConstantExpression(0))
-                                                )
-                                        )
-                                )
-                        )
-                )
-        );
-        IToyStack<IStatement> executionStack9=new ToyStack<>();
-        executionStack9.push(program9);
-        ProgramState state9=new ProgramState(executionStack9,new ToyMap<String, Integer>(),new ToyList<String>(),new FileTable(),9);
-
-        // 10
-        IStatement program10=new CompoundStatement(
-                new AssignmentStatement("v",new ConstantExpression(6)),
-                new CompoundStatement(
-                        new WhileStatement(new ArithmeticExpression(new VariableExpression("v"),new ConstantExpression(4),"-"),
-                                new CompoundStatement(
-                                        new PrintStatement(new VariableExpression("v")),
-                                        new AssignmentStatement("v",new ArithmeticExpression(new VariableExpression("v"),new ConstantExpression(1),"-"))
-                                )),
-                        new PrintStatement(new VariableExpression("v"))
-                )
-        );
-        IToyStack<IStatement> executionStack10=new ToyStack<>();
-        executionStack10.push(program10);
-        ProgramState state10=new ProgramState(executionStack10,new ToyMap<String, Integer>(),new ToyList<String>(),new FileTable(),10);
-
-        // 11
-        IStatement program11=new CompoundStatement(
-                new AssignmentStatement("v",new ConstantExpression(6)),
-                new CompoundStatement(
-                        new NewStatement("d",new ConstantExpression(10)),
-                        new CompoundStatement(
-                                new WhileStatement(new ArithmeticExpression(new VariableExpression("v"),new ConstantExpression(4),"-"),
-                                        new CompoundStatement(
-                                                new PrintStatement(new VariableExpression("v")),
-                                                new AssignmentStatement("v",new ArithmeticExpression(new VariableExpression("v"),new ConstantExpression(1),"-"))
-                                        )),
-                                new CompoundStatement(
-                                        new PrintStatement(new VariableExpression("v")),
-                                        new PrintStatement(new ArithmeticExpression(new ConstantExpression(100),new ReadHeapExpression("d"),"+"))
-                                )
-                        )
-                )
-        );
-        IToyStack<IStatement> executionStack11=new ToyStack<>();
-        executionStack11.push(program11);
-        ProgramState state11=new ProgramState(executionStack11,new ToyMap<String, Integer>(),new ToyList<String>(),new FileTable(),11);
-
-        // 12
-        IStatement program12=new CompoundStatement(
-                new AssignmentStatement("v",new ConstantExpression(10)),
-                new CompoundStatement(
-                        new NewStatement("a",new ConstantExpression(22)),
-                        new CompoundStatement(
-                                new ForkStatement(
-                                        new CompoundStatement(
-                                                new WriteHeapStatement("a",new ConstantExpression(30)),
-                                                new CompoundStatement(
-                                                        new AssignmentStatement("v",new ConstantExpression(32)),
-                                                        new CompoundStatement(
-                                                                new PrintStatement(new VariableExpression("v")),
-                                                                new PrintStatement(new ReadHeapExpression("a"))
-                                                        )
-                                                )
-                                        )),
-                                new CompoundStatement(
-                                        new PrintStatement(new VariableExpression("v")),
-                                        new PrintStatement(new ReadHeapExpression("a"))
-                                )
-                        )
-                )
-        );
-        IToyStack<IStatement> executionStack12= new ToyStack<>();
-        executionStack12.push(program12);
-        ProgramState state12=new ProgramState(executionStack12,new ToyMap<String, Integer>(),new ToyList<String>(),new FileTable(),12);
-
-        try {
-            IStateRepository repo1 = new StateRepository();
-            repo1.setLogFile("log1.txt");
-            ProgramController ctrl1 = new ProgramController(repo1);
-            ctrl1.addProgram(state1);
-
-            IStateRepository repo2 = new StateRepository();
-            repo2.setLogFile("log2.txt");
-            ProgramController ctrl2 = new ProgramController(repo2);
-            ctrl2.addProgram(state2);
-
-            IStateRepository repo3 = new StateRepository();
-            repo3.setLogFile("log3.txt");
-            ProgramController ctrl3 = new ProgramController(repo3);
-            ctrl3.addProgram(state3);
-
-            IStateRepository repo4 = new StateRepository();
-            repo4.setLogFile("log4.txt");
-            ProgramController ctrl4 = new ProgramController(repo4);
-            ctrl4.addProgram(state4);
-
-            IStateRepository repo5 = new StateRepository();
-            repo5.setLogFile("log5.txt");
-            ProgramController ctrl5 = new ProgramController(repo5);
-            ctrl5.addProgram(state5);
-
-            IStateRepository repo6 = new StateRepository();
-            repo6.setLogFile("log6.txt");
-            ProgramController ctrl6 = new ProgramController(repo6);
-            ctrl6.addProgram(state6);
-
-            IStateRepository repo7 = new StateRepository();
-            repo7.setLogFile("log7.txt");
-            ProgramController ctrl7 = new ProgramController(repo7);
-            ctrl7.addProgram(state7);
-
-            IStateRepository repo8 = new StateRepository();
-            repo8.setLogFile("log8.txt");
-            ProgramController ctrl8 = new ProgramController(repo8);
-            ctrl8.addProgram(state8);
-
-            IStateRepository repo9 = new StateRepository();
-            repo9.setLogFile("log9.txt");
-            ProgramController ctrl9 = new ProgramController(repo9);
-            ctrl9.addProgram(state9);
-
-            IStateRepository repo10 = new StateRepository();
-            repo10.setLogFile("log10.txt");
-            ProgramController ctrl10 = new ProgramController(repo10);
-            ctrl10.addProgram(state10);
-
-            IStateRepository repo11 = new StateRepository();
-            repo11.setLogFile("log11.txt");
-            ProgramController ctrl11 = new ProgramController(repo11);
-            ctrl11.addProgram(state11);
-
-            IStateRepository repo12 = new StateRepository();
-            repo12.setLogFile("log12.txt");
-            ProgramController ctrl12 = new ProgramController(repo12);
-            ctrl12.addProgram(state12);
-
-            programs=new ArrayList<>();
-
-            programs.add(new EntryProgram(1,state1,ctrl1));
-            programs.add(new EntryProgram(2,state2,ctrl2));
-            programs.add(new EntryProgram(3,state3,ctrl3));
-            programs.add(new EntryProgram(4,state4,ctrl4));
-            programs.add(new EntryProgram(5,state5,ctrl5));
-            programs.add(new EntryProgram(6,state6,ctrl6));
-            programs.add(new EntryProgram(7,state7,ctrl7));
-            programs.add(new EntryProgram(8,state8,ctrl8));
-            programs.add(new EntryProgram(9,state9,ctrl9));
-            programs.add(new EntryProgram(10,state10,ctrl10));
-            programs.add(new EntryProgram(11,state11,ctrl11));
-            programs.add(new EntryProgram(12,state12,ctrl12));
-
-
-            programStatesView = new ListView<>(FXCollections.observableArrayList(programs));
-
-
-
-        }
-        catch (Exception e){
-            System.out.println("Not cool, you got an error" + e.getMessage());
-        }
-    }
 
 }
