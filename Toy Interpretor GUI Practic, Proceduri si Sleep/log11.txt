@@ -1,0 +1,559 @@
+PROGRAM ID:11
+THE EXECUTION STACK:
+v=6;
+d=new(10);
+while(v-4){
+print(v);
+v=v-1
+};
+print(v);
+print(100+ReadFromHeap(d))
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+d=new(10);
+while(v-4){
+print(v);
+v=v-1
+};
+print(v);
+print(100+ReadFromHeap(d))
+v=6
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+d=new(10);
+while(v-4){
+print(v);
+v=v-1
+};
+print(v);
+print(100+ReadFromHeap(d))
+v=6
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+d=new(10);
+while(v-4){
+print(v);
+v=v-1
+};
+print(v);
+print(100+ReadFromHeap(d))
+THE SYMBOL TABLE:
+v = 6
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+d=new(10);
+while(v-4){
+print(v);
+v=v-1
+};
+print(v);
+print(100+ReadFromHeap(d))
+THE SYMBOL TABLE:
+v = 6
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+while(v-4){
+print(v);
+v=v-1
+};
+print(v);
+print(100+ReadFromHeap(d))
+d=new(10)
+THE SYMBOL TABLE:
+v = 6
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+while(v-4){
+print(v);
+v=v-1
+};
+print(v);
+print(100+ReadFromHeap(d))
+d=new(10)
+THE SYMBOL TABLE:
+v = 6
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+while(v-4){
+print(v);
+v=v-1
+};
+print(v);
+print(100+ReadFromHeap(d))
+THE SYMBOL TABLE:
+d = 1
+v = 6
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+while(v-4){
+print(v);
+v=v-1
+};
+print(v);
+print(100+ReadFromHeap(d))
+THE SYMBOL TABLE:
+d = 1
+v = 6
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+THE SYMBOL TABLE:
+d = 1
+v = 6
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+THE SYMBOL TABLE:
+d = 1
+v = 6
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+print(v);
+v=v-1
+THE SYMBOL TABLE:
+d = 1
+v = 6
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+print(v);
+v=v-1
+THE SYMBOL TABLE:
+d = 1
+v = 6
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+v=v-1
+print(v)
+THE SYMBOL TABLE:
+d = 1
+v = 6
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+v=v-1
+print(v)
+THE SYMBOL TABLE:
+d = 1
+v = 6
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+v=v-1
+THE SYMBOL TABLE:
+d = 1
+v = 6
+THE OUTPUT LIST:
+6 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+v=v-1
+THE SYMBOL TABLE:
+d = 1
+v = 6
+THE OUTPUT LIST:
+6 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+THE SYMBOL TABLE:
+d = 1
+v = 5
+THE OUTPUT LIST:
+6 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+THE SYMBOL TABLE:
+d = 1
+v = 5
+THE OUTPUT LIST:
+6 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+print(v);
+v=v-1
+THE SYMBOL TABLE:
+d = 1
+v = 5
+THE OUTPUT LIST:
+6 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+print(v);
+v=v-1
+THE SYMBOL TABLE:
+d = 1
+v = 5
+THE OUTPUT LIST:
+6 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+v=v-1
+print(v)
+THE SYMBOL TABLE:
+d = 1
+v = 5
+THE OUTPUT LIST:
+6 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+v=v-1
+print(v)
+THE SYMBOL TABLE:
+d = 1
+v = 5
+THE OUTPUT LIST:
+6 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+v=v-1
+THE SYMBOL TABLE:
+d = 1
+v = 5
+THE OUTPUT LIST:
+6 
+5 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+v=v-1
+THE SYMBOL TABLE:
+d = 1
+v = 5
+THE OUTPUT LIST:
+6 
+5 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+THE SYMBOL TABLE:
+d = 1
+v = 4
+THE OUTPUT LIST:
+6 
+5 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+while(v-4){
+print(v);
+v=v-1
+}
+THE SYMBOL TABLE:
+d = 1
+v = 4
+THE OUTPUT LIST:
+6 
+5 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+THE SYMBOL TABLE:
+d = 1
+v = 4
+THE OUTPUT LIST:
+6 
+5 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(v);
+print(100+ReadFromHeap(d))
+THE SYMBOL TABLE:
+d = 1
+v = 4
+THE OUTPUT LIST:
+6 
+5 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(100+ReadFromHeap(d))
+print(v)
+THE SYMBOL TABLE:
+d = 1
+v = 4
+THE OUTPUT LIST:
+6 
+5 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(100+ReadFromHeap(d))
+print(v)
+THE SYMBOL TABLE:
+d = 1
+v = 4
+THE OUTPUT LIST:
+6 
+5 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(100+ReadFromHeap(d))
+THE SYMBOL TABLE:
+d = 1
+v = 4
+THE OUTPUT LIST:
+6 
+5 
+4 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+print(100+ReadFromHeap(d))
+THE SYMBOL TABLE:
+d = 1
+v = 4
+THE OUTPUT LIST:
+6 
+5 
+4 
+THE FILETABLE:
+HEAP:
+1 = 10
+
+PROGRAM ID:11
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+d = 1
+v = 4
+THE OUTPUT LIST:
+6 
+5 
+4 
+110 
+THE FILETABLE:
+HEAP:
+1 = 10
+
