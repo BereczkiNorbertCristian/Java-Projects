@@ -1,6 +1,7 @@
 package Model.Expressions;
 
 import Collections.Heap;
+import Collections.IHeap;
 import Collections.IToyMap;
 import Exceptions.DivisionByZeroException;
 import Exceptions.VariableNotDefinedException;
@@ -24,7 +25,8 @@ public class ArithmeticExpression extends Expression implements Serializable {
         this.operation = operation;
     }
 
-    public int eval(IToyMap<String, Integer> symbolTable, Heap<Integer> heap) throws VariableNotDefinedException, DivisionByZeroException {
+    @Override
+    public int eval(IToyMap<String, Integer> symbolTable, IHeap<Integer> heap) throws VariableNotDefinedException, DivisionByZeroException {
 
         switch (operation) {
 

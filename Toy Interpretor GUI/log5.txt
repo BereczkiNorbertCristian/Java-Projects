@@ -415,3 +415,1938 @@ THE OUTPUT LIST:
 THE FILETABLE:
 HEAP:
 
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_f=open(test.in);;
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+print(var_c)
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+print(var_c)
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+close(var_f);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)}
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+close(var_f);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)}
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_f=open(test.in);;
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_f=open(test.in);;
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_f=open(test.in);;
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_f=open(test.in);;
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_f=open(test.in);;
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+print(var_c)
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+print(var_c)
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+close(var_f);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)}
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+close(var_f);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)}
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_f=open(test.in);;
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+print(var_c)
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+print(var_c)
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_f=open(test.in);;
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+print(var_c)
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+print(var_c)
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_f=open(test.in);;
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+print(var_c)
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+print(var_c)
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_f=open(test.in);;
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_f=open(test.in);;
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+print(var_c)
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+print(var_c)
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_f=open(test.in);;
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+print(var_c)
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+print(var_c)
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+close(var_f);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)}
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+close(var_f);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)}
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_f=open(test.in);;
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_f=open(test.in);
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+var_c=readFromFile(var_f+2);;
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+var_c=readFromFile(var_f+2);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+
+PROGRAM ID:5
+THE EXECUTION STACK:
+print(var_c);
+IF(var_c) THEN {var_c=readFromFile(var_f);;
+print(var_c)} ELSE {print(0)};
+close(var_f);
+THE SYMBOL TABLE:
+var_f = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+0 = test.in
+HEAP:
+

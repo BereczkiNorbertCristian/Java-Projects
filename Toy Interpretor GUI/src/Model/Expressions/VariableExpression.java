@@ -1,6 +1,7 @@
 package Model.Expressions;
 
 import Collections.Heap;
+import Collections.IHeap;
 import Collections.IToyMap;
 import Exceptions.KeyNotFoundMapException;
 import Exceptions.VariableNotDefinedException;
@@ -21,7 +22,7 @@ public class VariableExpression extends Expression implements Serializable {
     }
 
     @Override
-    public int eval(IToyMap<String, Integer> symbolTable, Heap<Integer> heap) throws VariableNotDefinedException {
+    public int eval(IToyMap<String, Integer> symbolTable, IHeap<Integer> heap) throws VariableNotDefinedException {
 
         Integer lookedUp = null;
         try {

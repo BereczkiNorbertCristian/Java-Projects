@@ -11,7 +11,7 @@ import java.util.Map;
  * Created by bnorbert on 24.11.2016.
  * bnorbertcristian@gmail.com
  */
-public class Heap<U> implements Serializable {
+public class Heap<U> implements IHeap<U>,Serializable {
 
     //heap is a map which maps an address to its value at that address
     private Map<Integer,U> heap;

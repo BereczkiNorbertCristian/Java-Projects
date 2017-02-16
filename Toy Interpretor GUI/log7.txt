@@ -221,3 +221,449 @@ HEAP:
 1 = 20
 2 = 22
 
+PROGRAM ID:7
+THE EXECUTION STACK:
+v=10;
+v=new(20);
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+v=new(20);
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+v=10
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+v=new(20);
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+v=10
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+v=new(20);
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+v = 10
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+v=new(20);
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+v = 10
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+v=new(20)
+THE SYMBOL TABLE:
+v = 10
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+v=new(20)
+THE SYMBOL TABLE:
+v = 10
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+a=new(22)
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+a=new(22)
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 22
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 22
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+print(100+ReadFromHeap(a))
+print(100+ReadFromHeap(v))
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 22
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+print(100+ReadFromHeap(a))
+print(100+ReadFromHeap(v))
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 22
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+120 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 22
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+120 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 22
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+120 
+122 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 22
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+v=10;
+v=new(20);
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+v=new(20);
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+v=10
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+v=new(20);
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+v=10
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+v=new(20);
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+v = 10
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+v=new(20);
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+v = 10
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+v=new(20)
+THE SYMBOL TABLE:
+v = 10
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+v=new(20)
+THE SYMBOL TABLE:
+v = 10
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+a=new(22);
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+a=new(22)
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+a=new(22)
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 22
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+print(100+ReadFromHeap(v));
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 22
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+print(100+ReadFromHeap(a))
+print(100+ReadFromHeap(v))
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 22
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+print(100+ReadFromHeap(a))
+print(100+ReadFromHeap(v))
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 22
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+120 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 22
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+print(100+ReadFromHeap(a))
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+120 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 22
+
+PROGRAM ID:7
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+a = 2
+v = 1
+THE OUTPUT LIST:
+120 
+122 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 22
+

@@ -36,6 +36,7 @@ public class ForkStatement implements IStatement,Serializable {
                 programState.getFileTable(),
                 programState.getProgramId()*10);
 
+        forked.setLockTable(programState.getLockTable());
         forked.setHeap(programState.getHeap());
         forked.setUniqueNumbersSet(programState.getUniqueNumbersSet());
 

@@ -1,0 +1,3654 @@
+PROGRAM ID:14
+THE EXECUTION STACK:
+v=2;
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+v=2
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+v=2
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+w=5
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+w=5
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+call sum(v*10,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+call sum(v*10,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+v=a+b;
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+v=a+b;
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+v=a+b
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+v=a+b
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call product(v,w,));
+fork(call sum(v,w,))
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call product(v,w,));
+fork(call sum(v,w,))
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call sum(v,w,))
+fork(call product(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call sum(v,w,))
+fork(call product(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+call product(v,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+call product(v,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+v=a*b;
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+call sum(v,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+v=a*b;
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+call sum(v,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+v=a*b
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+v=a+b;
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+v=a*b
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+v=a+b;
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+v=a+b
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+v=a+b
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+2 
+2 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v=2;
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+v=2
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+v=2
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+w=5
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+w=5
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+call sum(v*10,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+call sum(v*10,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+v=a+b;
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+v=a+b;
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+v=a+b
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+v=a+b
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v=2;
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+v=2
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+v=2
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+w=5
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+w=5
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+call sum(v*10,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+call sum(v*10,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+v=a+b;
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+v=a+b;
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+v=a+b
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+v=a+b
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v=2;
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+v=2
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+v=2
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+w=5
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+w=5
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+call sum(v*10,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+call sum(v*10,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+v=a+b;
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+v=a+b;
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+v=a+b
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+v=a+b
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+v = 25
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+v = 25
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+THE SYMBOL TABLE:
+a = 20
+b = 5
+v = 25
+THE OUTPUT LIST:
+25 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+THE SYMBOL TABLE:
+a = 20
+b = 5
+v = 25
+THE OUTPUT LIST:
+25 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+25 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+25 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call product(v,w,));
+fork(call sum(v,w,))
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+25 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call product(v,w,));
+fork(call sum(v,w,))
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+25 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call sum(v,w,))
+fork(call product(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call sum(v,w,))
+fork(call product(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+call product(v,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+call product(v,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+v=a*b;
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+call sum(v,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+v=a*b;
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+call sum(v,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+v=a*b
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+v=a+b;
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+v=a*b
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+v=a+b;
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+v = 10
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+v=a+b
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+v = 10
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+v=a+b
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+25 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+THE SYMBOL TABLE:
+a = 2
+b = 5
+v = 10
+THE OUTPUT LIST:
+25 
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+v = 7
+THE OUTPUT LIST:
+25 
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+THE SYMBOL TABLE:
+a = 2
+b = 5
+v = 10
+THE OUTPUT LIST:
+25 
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+v = 7
+THE OUTPUT LIST:
+25 
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+25 
+2 
+10 
+7 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+THE SYMBOL TABLE:
+a = 2
+b = 5
+v = 7
+THE OUTPUT LIST:
+25 
+2 
+10 
+7 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+THE SYMBOL TABLE:
+a = 2
+b = 5
+v = 7
+THE OUTPUT LIST:
+25 
+2 
+10 
+7 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+25 
+2 
+10 
+7 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v=2;
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+v=2
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+v=2
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+w=5
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+w=5
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+call sum(v*10,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+call sum(v*10,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+w=a+b;
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+w=a+b;
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+w=a+b
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+w=a+b
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+w = 25
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+w = 25
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+THE SYMBOL TABLE:
+a = 20
+b = 5
+w = 25
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v=2;
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+v=2
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+v=2
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+w=5
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+w=5
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+call sum(v*10,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+call sum(v*10,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+w=a+b;
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+w=a+b;
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+w=a+b
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+w=a+b
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+w = 25
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+w = 25
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+THE SYMBOL TABLE:
+a = 20
+b = 5
+w = 25
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+THE SYMBOL TABLE:
+a = 20
+b = 5
+w = 25
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call product(v,w,));
+fork(call sum(v,w,))
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call product(v,w,));
+fork(call sum(v,w,))
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call sum(v,w,))
+fork(call product(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call sum(v,w,))
+fork(call product(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+call product(v,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+call product(v,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+v=a*b;
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+call sum(v,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+v=a*b;
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+call sum(v,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+v=a*b
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+w=a+b;
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+v=a*b
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+w=a+b;
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+v = 10
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+w=a+b
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+v = 10
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+w=a+b
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+THE SYMBOL TABLE:
+a = 2
+b = 5
+v = 10
+THE OUTPUT LIST:
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+w = 7
+THE OUTPUT LIST:
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+THE SYMBOL TABLE:
+a = 2
+b = 5
+v = 10
+THE OUTPUT LIST:
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+w = 7
+THE OUTPUT LIST:
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+THE SYMBOL TABLE:
+a = 2
+b = 5
+w = 7
+THE OUTPUT LIST:
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+THE SYMBOL TABLE:
+a = 2
+b = 5
+w = 7
+THE OUTPUT LIST:
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v=2;
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+v=2
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+v=2
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+w=5
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+w=5
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+call sum(v*10,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+call sum(v*10,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+w=a+b;
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+w=a+b;
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+w=a+b
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+w=a+b
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+w = 25
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+w = 25
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+THE SYMBOL TABLE:
+a = 20
+b = 5
+w = 25
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+THE SYMBOL TABLE:
+a = 20
+b = 5
+w = 25
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call product(v,w,));
+fork(call sum(v,w,))
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call product(v,w,));
+fork(call sum(v,w,))
+print(v)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call sum(v,w,))
+fork(call product(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call sum(v,w,))
+fork(call product(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+call product(v,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+call product(v,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+v=a*b;
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+call sum(v,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+v=a*b;
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+call sum(v,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+v=a*b
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+w=a+b;
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+v=a*b
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+w=a+b;
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+v = 10
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+w=a+b
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+v = 10
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+w=a+b
+THE SYMBOL TABLE:
+a = 2
+b = 5
+THE OUTPUT LIST:
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+THE SYMBOL TABLE:
+a = 2
+b = 5
+v = 10
+THE OUTPUT LIST:
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+w = 7
+THE OUTPUT LIST:
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+THE SYMBOL TABLE:
+a = 2
+b = 5
+v = 10
+THE OUTPUT LIST:
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+print(v)
+THE SYMBOL TABLE:
+a = 2
+b = 5
+w = 7
+THE OUTPUT LIST:
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+THE SYMBOL TABLE:
+a = 2
+b = 5
+w = 7
+THE OUTPUT LIST:
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+return
+THE SYMBOL TABLE:
+a = 2
+b = 5
+w = 7
+THE OUTPUT LIST:
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+2 
+10 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v=2;
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+v=2
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+v=2
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+w=5;
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+w=5
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+w=5
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+call sum(v*10,w,);
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+call sum(v*10,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+call sum(v*10,w,)
+THE SYMBOL TABLE:
+v = 2
+w = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+w=a+b;
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+w=a+b;
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+w=a+b
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+w=a+b
+THE SYMBOL TABLE:
+a = 20
+b = 5
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+w = 25
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+print(v)
+THE SYMBOL TABLE:
+a = 20
+b = 5
+w = 25
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(v);
+fork(call product(v,w,));
+fork(call sum(v,w,))
+return
+THE SYMBOL TABLE:
+a = 20
+b = 5
+w = 25
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+

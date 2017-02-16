@@ -1,0 +1,8620 @@
+PROGRAM ID:14
+THE EXECUTION STACK:
+v1=new(20);
+v2=new(30);
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v2=new(30);
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+v1=new(20)
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v2=new(30);
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+v1=new(20)
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v2=new(30);
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+v1 = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v2=new(30);
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+v1 = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+v2=new(30)
+THE SYMBOL TABLE:
+v1 = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+v2=new(30)
+THE SYMBOL TABLE:
+v1 = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+newLock(x)
+THE SYMBOL TABLE:
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+newLock(x)
+THE SYMBOL TABLE:
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x))
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x))
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+newLock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x))
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+newLock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x))
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=200
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(x)
+WriteToHeap(v1,ReadFromHeap(v1)+1)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=200
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(x)
+WriteToHeap(v1,ReadFromHeap(v1)+1)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 200
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 200
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=300
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 200
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+m=100
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=300
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 200
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+m=100
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 300
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 300
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=400
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 300
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(x)
+WriteToHeap(v1,ReadFromHeap(v1)-1)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(q)
+WriteToHeap(v2,ReadFromHeap(v2)+5)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=400
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 300
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(x)
+WriteToHeap(v1,ReadFromHeap(v1)-1)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(q)
+WriteToHeap(v2,ReadFromHeap(v2)+5)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+lock(x)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+lock(x)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+print(ReadFromHeap(v1))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(q)
+WriteToHeap(v2,ReadFromHeap(v2)+1)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+print(ReadFromHeap(v1))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(q)
+WriteToHeap(v2,ReadFromHeap(v2)+1)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+unlock(x)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+unlock(x)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v2));
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v2));
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = 14
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = 14
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(q)
+print(ReadFromHeap(v2))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = 14
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(q)
+print(ReadFromHeap(v2))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = 14
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+36 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = 14
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+36 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = 14
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+36 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v1=new(20);
+v2=new(30);
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v2=new(30);
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+v1=new(20)
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v2=new(30);
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+v1=new(20)
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v2=new(30);
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+v1 = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v2=new(30);
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+v1 = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+v2=new(30)
+THE SYMBOL TABLE:
+v1 = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+v2=new(30)
+THE SYMBOL TABLE:
+v1 = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+newLock(x)
+THE SYMBOL TABLE:
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+newLock(x)
+THE SYMBOL TABLE:
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x))
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x))
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+newLock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x))
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+newLock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x))
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=200
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(x)
+WriteToHeap(v1,ReadFromHeap(v1)+1)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=200
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(x)
+WriteToHeap(v1,ReadFromHeap(v1)+1)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 200
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 200
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=300
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 200
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+m=100
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=300
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 200
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+m=100
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 300
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 300
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=400
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 300
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(x)
+WriteToHeap(v1,ReadFromHeap(v1)-1)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(q)
+WriteToHeap(v2,ReadFromHeap(v2)+5)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=400
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 300
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(x)
+WriteToHeap(v1,ReadFromHeap(v1)-1)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(q)
+WriteToHeap(v2,ReadFromHeap(v2)+5)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+lock(x)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+lock(x)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+print(ReadFromHeap(v1))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(q)
+WriteToHeap(v2,ReadFromHeap(v2)+1)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+print(ReadFromHeap(v1))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(q)
+WriteToHeap(v2,ReadFromHeap(v2)+1)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+unlock(x)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v1=new(20);
+v2=new(30);
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v2=new(30);
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+v1=new(20)
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v2=new(30);
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+v1=new(20)
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v2=new(30);
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+v1 = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+v2=new(30);
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+v1 = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+v2=new(30)
+THE SYMBOL TABLE:
+v1 = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+v2=new(30)
+THE SYMBOL TABLE:
+v1 = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(x);
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+newLock(x)
+THE SYMBOL TABLE:
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+newLock(x)
+THE SYMBOL TABLE:
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x));
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x))
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+fork(fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x))
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+newLock(q);
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x));
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+newLock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x))
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+newLock(q)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+fork(lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x))
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q));
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+lock(x);
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+fork(fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=200;
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)+1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q));
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=200
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(x)
+WriteToHeap(v1,ReadFromHeap(v1)+1)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=200
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(x)
+WriteToHeap(v1,ReadFromHeap(v1)+1)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+fork(lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 200
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=300;
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 200
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+m=100;
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 140
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=300
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 200
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+m=100
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=300
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 200
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+lock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+m=100
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 300
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+z=400;
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 300
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v1,ReadFromHeap(v1)-1);
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+lock(q);
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+5);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=400
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 300
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(x)
+WriteToHeap(v1,ReadFromHeap(v1)-1)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(q)
+WriteToHeap(v2,ReadFromHeap(v2)+5)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+z=400
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 300
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(x)
+WriteToHeap(v1,ReadFromHeap(v1)-1)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(q)
+WriteToHeap(v2,ReadFromHeap(v2)+5)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 21
+2 = 30
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(x);
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(x)
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 1400
+2 = 1400
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+lock(x)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:1400
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+lock(x)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v1));
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+WriteToHeap(v2,ReadFromHeap(v2)+1);
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+print(ReadFromHeap(v1))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(q)
+WriteToHeap(v2,ReadFromHeap(v2)+1)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+print(ReadFromHeap(v1))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(q)
+WriteToHeap(v2,ReadFromHeap(v2)+1)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 35
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(x);
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = 140
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+unlock(x)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = -1
+
+
+PROGRAM ID:140
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+q = 2
+x = 1
+v1 = 1
+v2 = 2
+m = 100
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+unlock(x)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = 14
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+lock(q);
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v2));
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v2));
+unlock(q)
+lock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = -1
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = 14
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+print(ReadFromHeap(v2));
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = 14
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(q)
+print(ReadFromHeap(v2))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = 14
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(q)
+print(ReadFromHeap(v2))
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = 14
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+36 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = 14
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+unlock(q)
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+36 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = 14
+
+
+PROGRAM ID:14
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+q = 2
+x = 1
+z = 400
+v1 = 1
+v2 = 2
+THE OUTPUT LIST:
+20 
+36 
+THE FILETABLE:
+HEAP:
+1 = 20
+2 = 36
+LOCK TABLE:
+1 = -1
+2 = -1
+
+

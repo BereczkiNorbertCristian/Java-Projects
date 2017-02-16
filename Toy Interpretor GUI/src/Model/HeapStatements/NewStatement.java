@@ -1,6 +1,7 @@
 package Model.HeapStatements;
 
 import Collections.Heap;
+import Collections.IHeap;
 import Collections.IToyMap;
 import Exceptions.NewHeapException;
 import Model.Expressions.Expression;
@@ -28,7 +29,7 @@ public class NewStatement implements IStatement,Serializable {
     @Override
     public ProgramState execute(ProgramState programState) throws NewHeapException{
 
-        Heap heap=programState.getHeap();
+        IHeap heap=programState.getHeap();
         IToyMap<String,Integer> symbolTable=programState.getSymbolTable();
         try {
             int address = heap.put(expression.eval(symbolTable,heap));

@@ -50,6 +50,7 @@ public class Main extends Application {
     TextField noProgramsField;
     Button runOneStepButton;
     ProgramController programController;
+    TableView<Pair<Integer,Integer>> lockView;
 
 
     @Override
@@ -70,6 +71,10 @@ public class Main extends Application {
 
     private void populateIdentifierList(){
 
+        if(programController.getErrorEncountered()){
+            programStatesView.setItems(FXCollections.observableArrayList());
+            return;
+        }
         List<ProgramState> programStates = programController.getProgramStates();
         List<EntryIdentifier> entryIdentifiers=new ArrayList<>();
         for(ProgramState program : programStates){
@@ -86,8 +91,11 @@ public class Main extends Application {
         secondaryStage.setOnHiding(new EventHandler<WindowEvent>() {
             @Override
             public void handle(WindowEvent event) {
-                programController=secondaryController.getProgramController();
 
+                programController=secondaryController.getProgramController();
+                if(programController == null){
+                    System.exit(0);
+                }
                 populateIdentifierList();
                 primaryStage.show();
 
@@ -117,6 +125,7 @@ public class Main extends Application {
         outView.setItems(FXCollections.observableArrayList());
         heapView.setItems(FXCollections.observableArrayList());
         fileTableView.setItems(FXCollections.observableArrayList());
+        lockView.setItems(FXCollections.observableArrayList());
     }
 
     private void listenOnSelection(){
@@ -129,23 +138,39 @@ public class Main extends Application {
                         if(newValue == null){
                             return;
                         }
-                        System.out.println(programController.getProgramStates().size());
                         exeStackView.setItems(getExeStackOList(newValue));
                         symbolTableView.setItems(getSymbolTableOList(newValue));
                         outView.setItems(getOutOList(newValue));
                         heapView.setItems(getHeapOList(newValue));
                         fileTableView.setItems(getFileTableOList(newValue));
+                        lockView.setItems(getLockOList(newValue));
                     }
                 }
         );
 
     }
 
+    private ObservableList<Pair<Integer,Integer>> getLockOList(EntryIdentifier entryIdentifier){
+        ProgramState state=entryIdentifier.getProgram();
+        List<Pair<Integer,Integer>> ret=new ArrayList<>();
+        if(state.getLockTable() == null){
+            return FXCollections.observableArrayList();
+        }
+        Iterator<Map.Entry<Integer,Integer>> iter=state.getLockTable().iterator();
+        while (iter.hasNext()){
+            Map.Entry<Integer,Integer> entry=iter.next();
+            ret.add(new Pair<>(entry.getKey(),entry.getValue()));
+        }
+        return FXCollections.observableArrayList(ret);
+    }
 
     public ObservableList<Pair<Integer,Integer>> getHeapOList(EntryIdentifier entryIdentifier){
 
         ProgramState state=entryIdentifier.getProgram();
         List<Pair<Integer,Integer>> ret=new ArrayList<>();
+        if(state.getHeap() == null){
+            return FXCollections.observableArrayList();
+        }
         Iterator<Map.Entry<Integer,Integer>> iter=state.getHeap().iterator();
         while (iter.hasNext()){
             Map.Entry<Integer,Integer> entry=iter.next();
@@ -157,6 +182,9 @@ public class Main extends Application {
     public ObservableList<Pair<Integer,Pair<String,BufferedReader>>> getFileTableOList(EntryIdentifier entryIdentifier){
 
         ProgramState state=entryIdentifier.getProgram();
+        if(state.getFileTable() == null){
+            return FXCollections.observableArrayList();
+        }
         List<Pair<Integer,Pair<String,BufferedReader>>> ret=new ArrayList<>();
         Iterator<Map.Entry<Integer,Pair<String,BufferedReader>>> iter=state.getFileTable().iterator();
         while(iter.hasNext()){
@@ -170,6 +198,9 @@ public class Main extends Application {
     public ObservableList<String> getOutOList(EntryIdentifier entryIdentifier){
         ProgramState state=entryIdentifier.getProgram();
         List<String> ret=new ArrayList<>();
+        if(state.getOut() == null){
+            return FXCollections.observableArrayList();
+        }
         Iterator<String> iter=state.getOut().iterator();
         while (iter.hasNext()){
             ret.add(iter.next());
@@ -180,6 +211,9 @@ public class Main extends Application {
     public ObservableList<Pair<String,Integer>> getSymbolTableOList(EntryIdentifier entryIdentifier){
         ProgramState state=entryIdentifier.getProgram();
         List<Pair<String,Integer>> ret=new ArrayList<>();
+        if(state.getSymbolTable()== null){
+            return FXCollections.observableArrayList();
+        }
         Iterator<Map.Entry<String,Integer>> iter = state.getSymbolTable().iterator();
         while(iter.hasNext()){
             Map.Entry<String,Integer> mapEntry=iter.next();
@@ -191,11 +225,11 @@ public class Main extends Application {
 
     public ObservableList<String> getExeStackOList(EntryIdentifier entryIdentifier){
 
-        if(entryIdentifier == null){
-            System.out.println("ID");
-        }
         ProgramState state=entryIdentifier.getProgram();
         List<String> ret=new ArrayList<>();
+        if(state.getExecutionStack() == null){
+            return FXCollections.observableArrayList();
+        }
         Iterator<IStatement> iter = state.getExecutionStack().iterator();
         while(iter.hasNext()){
             IStatement stmt=iter.next();
@@ -211,22 +245,57 @@ public class Main extends Application {
         root = new HBox(30);
         root.setPadding(new Insets(30));
         primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 900, 700));
+        primaryStage.setScene(new Scene(root, 1150, 700));
 
-        VBox leftPane,middlePane,rightPane;
+        VBox leftPane,middlePane,rightPane,rightPlusPane;
 
         leftPane=new VBox(10);
         middlePane=new VBox(10);
         rightPane=new VBox(10);
+        rightPlusPane=new VBox(10);
 
         createLeftPane(leftPane);
         createMiddlePane(middlePane);
         createRightPane(rightPane);
+        createRightPlusPane(rightPlusPane);
 
         root.getChildren().add(leftPane);
         root.getChildren().add(middlePane);
         root.getChildren().add(rightPane);
+        root.getChildren().add(rightPlusPane);
 
+    }
+
+    public void createRightPlusPane(VBox rightPlusPane){
+        lockView=new TableView<>();
+
+        TableColumn<Pair<Integer,Integer>,String> leftColumn=new TableColumn<>("Location");
+        TableColumn<Pair<Integer,Integer>,String> rightColumn=new TableColumn<>("Value");
+
+        lockView.getColumns().add(leftColumn);
+        lockView.getColumns().add(rightColumn);
+
+        setColumnPropertyLockView(leftColumn,rightColumn);
+
+        rightPlusPane.getChildren().add(new Label("Lock Table"));
+        rightPlusPane.getChildren().add(lockView);
+    }
+    private void setColumnPropertyLockView(TableColumn<Pair<Integer,Integer>,String> columnVariable,
+                                           TableColumn<Pair<Integer,Integer>,String> columnValue){
+        columnVariable.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Pair<Integer, Integer>, String>, ObservableValue<String>>() {
+            @Override
+            public ObservableValue<String> call(TableColumn.CellDataFeatures<Pair<Integer, Integer>, String> param) {
+                Pair<Integer,Integer> pair=param.getValue();
+                return new SimpleStringProperty(pair.getFirst().toString());
+            }
+        });
+        columnValue.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Pair<Integer, Integer>, String>, ObservableValue<String>>() {
+            @Override
+            public ObservableValue<String> call(TableColumn.CellDataFeatures<Pair<Integer, Integer>, String> param) {
+                Pair<Integer,Integer> pair=param.getValue();
+                return new SimpleStringProperty(pair.getSecond().toString());
+            }
+        });
     }
 
     public void createLeftPane(VBox leftPane){
@@ -292,7 +361,7 @@ public class Main extends Application {
 
         fileTableView.getColumns().add(columnLeft);
         fileTableView.getColumns().add(columnRight);
-        setColumnsPropertyFileTable(columnLeft,columnLeft);
+        setColumnsPropertyFileTable(columnLeft,columnRight);
 
 
 

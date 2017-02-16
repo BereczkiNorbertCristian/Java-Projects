@@ -12,7 +12,7 @@ import java.util.stream.Stream;
  * Created by bnorbert on 11.11.2016.
  * bnorbertcristian@gmail.com
  */
-public class FileTable implements IToyMap<Integer, Pair<String,BufferedReader>>,Serializable {
+public class FileTable implements IFileTable,Serializable {
 
     IToyMap<Integer,Pair<String,BufferedReader>> insideTable;
 
@@ -21,7 +21,7 @@ public class FileTable implements IToyMap<Integer, Pair<String,BufferedReader>>,
     }
 
     @Override
-    public IToyMap<Integer,Pair<String,BufferedReader>> put(Integer key,Pair<String,BufferedReader> value){
+    public IFileTable put(Integer key,Pair<String,BufferedReader> value){
 
         insideTable.put(key,value);
         return this;
@@ -73,23 +73,6 @@ public class FileTable implements IToyMap<Integer, Pair<String,BufferedReader>>,
         return insideTable.getEntries();
     }
 
-    @Override
-    public IToyMap<Integer,Pair<String,BufferedReader>> clone(){
-
-        IToyMap<Integer,Pair<String,BufferedReader>> ret=new ToyMap<Integer,Pair<String,BufferedReader>>();
-
-        Iterator iter = insideTable.getEntries().iterator();
-        while(iter.hasNext()){
-            Map.Entry pair= (Map.Entry) iter.next();
-            ret.put((Integer) pair.getKey(),(Pair<String, BufferedReader>) pair.getValue());
-        }
-        return ret;
-    }
-
-    @Override
-    public void checkEqualMaps(IToyMap<String,Integer> cloned){
-
-    }
 
     @Override
     public Iterator iterator() {

@@ -12,6 +12,9 @@ import Model.FileStatements.OpenFileStatement;
 import Model.FileStatements.ReadFileStatement;
 import Model.HeapStatements.NewStatement;
 import Model.HeapStatements.WriteHeapStatement;
+import Model.LockStatements.LockStatement;
+import Model.LockStatements.NewLockStatement;
+import Model.LockStatements.UnlockStatement;
 import Model.ProgramState;
 import Model.Statements.*;
 import Repository.IStateRepository;
@@ -307,6 +310,117 @@ public class SecondaryController {
         executionStack12.push(program12);
         ProgramState state12=new ProgramState(executionStack12,new ToyMap<String, Integer>(),new ToyList<String>(),new FileTable(),12);
 
+        //13 practic
+        IStatement program13=new CompoundStatement(
+                new AssignmentStatement("v",new ConstantExpression(20)),
+                new CompoundStatement(
+                        new ForStatement(
+                                "v",
+                                new ConstantExpression(0),
+                                new ConstantExpression(3),
+                                new ArithmeticExpression(new VariableExpression("v"),new ConstantExpression(1),"+"),
+                                new ForkStatement(new CompoundStatement(new PrintStatement(new VariableExpression("v")),
+                                        new AssignmentStatement("v",new ArithmeticExpression(new VariableExpression("v"),new ConstantExpression(1),"+"))))),
+                        new PrintStatement(new ArithmeticExpression(new VariableExpression("v"),new ConstantExpression(10),"*"))
+                )
+        );
+        IToyStack<IStatement> executionStack13= new ToyStack<>();
+        executionStack13.push(program13);
+        ProgramState state13=new ProgramState(executionStack13,new ToyMap<String, Integer>(),new ToyList<String>(),new FileTable(),13);
+
+        //14 practic
+        IStatement program14=new CompoundStatement(
+                new NewStatement("v1",new ConstantExpression(20)),
+                new CompoundStatement(
+                        new NewStatement("v2",new ConstantExpression(30)),
+                        new CompoundStatement(
+                                new NewLockStatement("x"),
+                                new CompoundStatement(
+                                        new ForkStatement(
+                                                new CompoundStatement(
+                                                        new ForkStatement(
+                                                                new CompoundStatement(
+                                                                        new LockStatement("x"),
+                                                                        new CompoundStatement(
+                                                                            new WriteHeapStatement("v1",new ArithmeticExpression(new ReadHeapExpression("v1"),new ConstantExpression(1),"-")),
+                                                                                new UnlockStatement("x")
+                                                                        )
+                                                                )
+                                                        ),
+                                                        new CompoundStatement(
+                                                                new LockStatement("x"),
+                                                                new CompoundStatement(
+                                                                        new WriteHeapStatement("v1",new ArithmeticExpression(new ReadHeapExpression("v1"),new ConstantExpression(1),"+")),
+                                                                        new UnlockStatement("x")
+                                                                )
+                                                        )
+                                                )
+                                        ),
+                                        new CompoundStatement(
+                                                new NewLockStatement("q"),
+                                                new CompoundStatement(
+                                                        new ForkStatement(
+                                                                new CompoundStatement(
+                                                                        new ForkStatement(
+                                                                            new CompoundStatement(
+                                                                                    new LockStatement("q"),
+                                                                                    new CompoundStatement(
+                                                                                        new WriteHeapStatement("v2",new ArithmeticExpression(new ReadHeapExpression("v2"),new ConstantExpression(5),"+")),
+                                                                                        new UnlockStatement("q")
+                                                                                    )
+                                                                            )
+                                                                        ),
+                                                                        new CompoundStatement(
+                                                                                new AssignmentStatement("m",new ConstantExpression(100)),
+                                                                                new CompoundStatement(
+                                                                                        new LockStatement("q"),
+                                                                                        new CompoundStatement(
+                                                                                                new WriteHeapStatement("v2",new ArithmeticExpression(new ReadHeapExpression("v2"),new ConstantExpression(1),"+")),
+                                                                                                new UnlockStatement("q")
+                                                                                        )
+                                                                                )
+                                                                        )
+                                                                )
+                                                        ),
+                                                        new CompoundStatement(
+                                                                new AssignmentStatement("z",new ConstantExpression(200)),
+                                                                new CompoundStatement(
+                                                                        new AssignmentStatement("z",new ConstantExpression(300)),
+                                                                        new CompoundStatement(
+                                                                                new AssignmentStatement("z",new ConstantExpression(400)),
+                                                                                new CompoundStatement(
+                                                                                        new LockStatement("x"),
+                                                                                        new CompoundStatement(
+                                                                                                new PrintStatement(new ReadHeapExpression("v1")),
+                                                                                                new CompoundStatement(
+                                                                                                        new UnlockStatement("x"),
+                                                                                                        new CompoundStatement(
+                                                                                                                new LockStatement("q"),
+                                                                                                                new CompoundStatement(
+                                                                                                                        new PrintStatement(new ReadHeapExpression("v2")),
+                                                                                                                        new UnlockStatement("q")
+                                                                                                                )
+                                                                                                        )
+                                                                                                )
+                                                                                        )
+                                                                                )
+                                                                        )
+                                                                )
+                                                        )
+                                                )
+                                        )
+                                )
+                        )
+                )
+        );
+        IToyStack<IStatement> executionStack14= new ToyStack<>();
+        executionStack14.push(program14);
+        ProgramState state14=new ProgramState(executionStack14,new ToyMap<String, Integer>(),new ToyList<String>(),new FileTable(),14);
+        ILockTable lockTable14=new LockTable();
+        state14.setLockTable(lockTable14);
+
+
+
         try {
             IStateRepository repo1 = new StateRepository();
             repo1.setLogFile("log1.txt");
@@ -368,6 +482,18 @@ public class SecondaryController {
             ProgramController ctrl12 = new ProgramController(repo12);
             ctrl12.addProgram(state12);
 
+            IStateRepository repo13 = new StateRepository();
+            repo13.setLogFile("log13.txt");
+            ProgramController ctrl13 = new ProgramController(repo13);
+            ctrl13.addProgram(state13);
+
+            IStateRepository repo14 = new StateRepository();
+            repo14.setLogFile("log14.txt");
+            ProgramController ctrl14 = new ProgramController(repo14);
+            ctrl14.addProgram(state14);
+
+
+
             programs=new ArrayList<>();
 
             programs.add(new EntryProgram(1,state1,ctrl1));
@@ -382,6 +508,10 @@ public class SecondaryController {
             programs.add(new EntryProgram(10,state10,ctrl10));
             programs.add(new EntryProgram(11,state11,ctrl11));
             programs.add(new EntryProgram(12,state12,ctrl12));
+            programs.add(new EntryProgram(13,state13,ctrl13));
+            programs.add(new EntryProgram(14,state14,ctrl14));
+
+
 
 
 

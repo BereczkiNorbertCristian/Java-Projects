@@ -1,0 +1,1954 @@
+PROGRAM ID:13
+THE EXECUTION STACK:
+v=0;
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+};
+sleep(5);
+print(v*10)
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+};
+sleep(5);
+print(v*10)
+v=0
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+};
+sleep(5);
+print(v*10)
+v=0
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+};
+sleep(5);
+print(v*10)
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+};
+sleep(5);
+print(v*10)
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+fork(print(v);
+v=v+1);
+v=v+1
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+fork(print(v);
+v=v+1);
+v=v+1
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+fork(print(v);
+v=v+1)
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+fork(print(v);
+v=v+1)
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+print(v);
+v=v+1
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+print(v);
+v=v+1
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+print(v)
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+print(v)
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+fork(print(v);
+v=v+1);
+v=v+1
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+fork(print(v);
+v=v+1);
+v=v+1
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+fork(print(v);
+v=v+1)
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+fork(print(v);
+v=v+1)
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+print(v);
+v=v+1
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+print(v);
+v=v+1
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+print(v)
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+print(v)
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+fork(print(v);
+v=v+1);
+v=v+1
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+fork(print(v);
+v=v+1);
+v=v+1
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+fork(print(v);
+v=v+1)
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+fork(print(v);
+v=v+1)
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+print(v);
+v=v+1
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+print(v);
+v=v+1
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+print(v)
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+print(v)
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(5)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(5)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(4)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(4)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(3)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(3)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(2)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(2)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(1)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(1)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(0)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(0)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+30 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+v=0;
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+};
+sleep(5);
+print(v*10)
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+};
+sleep(5);
+print(v*10)
+v=0
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+};
+sleep(5);
+print(v*10)
+v=0
+THE SYMBOL TABLE:
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+};
+sleep(5);
+print(v*10)
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+};
+sleep(5);
+print(v*10)
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+fork(print(v);
+v=v+1);
+v=v+1
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+fork(print(v);
+v=v+1);
+v=v+1
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+fork(print(v);
+v=v+1)
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+fork(print(v);
+v=v+1)
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+print(v);
+v=v+1
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+print(v);
+v=v+1
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+print(v)
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+print(v)
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+fork(print(v);
+v=v+1);
+v=v+1
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+fork(print(v);
+v=v+1);
+v=v+1
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+THE SYMBOL TABLE:
+v = 0
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+fork(print(v);
+v=v+1)
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+fork(print(v);
+v=v+1)
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+print(v);
+v=v+1
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+print(v);
+v=v+1
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+print(v)
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+print(v)
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+fork(print(v);
+v=v+1);
+v=v+1
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+fork(print(v);
+v=v+1);
+v=v+1
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+THE SYMBOL TABLE:
+v = 1
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+fork(print(v);
+v=v+1)
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+fork(print(v);
+v=v+1)
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+print(v);
+v=v+1
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+v=v+1
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+print(v);
+v=v+1
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+print(v)
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+while(v<3){
+fork(print(v);
+v=v+1);
+v=v+1
+}
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+print(v)
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+sleep(5);
+print(v*10)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+v=v+1
+THE SYMBOL TABLE:
+v = 2
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(5)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:130
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(5)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(4)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(4)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(3)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(3)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(2)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(2)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(1)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(1)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(0)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+sleep(0)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+print(v*10)
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+THE FILETABLE:
+HEAP:
+
+PROGRAM ID:13
+THE EXECUTION STACK:
+THE SYMBOL TABLE:
+v = 3
+THE OUTPUT LIST:
+0 
+1 
+2 
+30 
+THE FILETABLE:
+HEAP:
+

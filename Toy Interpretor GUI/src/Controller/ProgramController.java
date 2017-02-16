@@ -12,7 +12,9 @@ import static Controller.GarbageCollector.*;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -25,8 +27,13 @@ import java.util.stream.Collectors;
  */
 public class ProgramController {
 
-    IStateRepository statesRepository;
-    ExecutorService executor;
+    private IStateRepository statesRepository;
+    private ExecutorService executor;
+    private boolean errorEncountered=false;
+
+    public boolean getErrorEncountered(){
+        return errorEncountered;
+    }
 
     String programOuput;
 
@@ -157,6 +164,13 @@ public class ProgramController {
 
     public void oneStepForAllPrograms(List<ProgramState> programList) throws Exception{
 
+        if(errorEncountered){
+            Alert mioAlerto=new Alert(Alert.AlertType.CONFIRMATION);
+            mioAlerto.setContentText("The program cannot continue any further due to execution error");
+            mioAlerto.showAndWait();
+            return;
+        }
+
         programList.forEach(prg -> {
                 try {
                     statesRepository.logProgramStateExec(prg);
@@ -188,15 +202,24 @@ public class ProgramController {
                             return future.get();
                         }
                         catch (InterruptedException ie){
-                            ie.printStackTrace();
+                            Alert alert=new Alert(Alert.AlertType.CONFIRMATION);
+                            alert.setContentText("ERROR:"+ie.getMessage());
+                            alert.showAndWait();
                             return null;
                         }
                         catch (ExecutionException ee){
-                            ee.printStackTrace();
+                            errorEncountered=true;
+                            Alert alert=new Alert(Alert.AlertType.CONFIRMATION);
+                            alert.setContentText("ERROR:"+ee.getMessage());
+                            alert.showAndWait();
                             return null;
                         }
                         catch (Exception e){
-                            System.out.println("Program finished");
+                            errorEncountered=true;
+                            System.out.println("CAUGHT HERE");
+                            Alert alert=new Alert(Alert.AlertType.CONFIRMATION);
+                            alert.setContentText("ERROR:"+e.getMessage());
+                            alert.showAndWait();
                             return null;
                         }
                     })
@@ -207,6 +230,7 @@ public class ProgramController {
             ie.printStackTrace();
         }
         catch (Exception e){
+            errorEncountered=true;
             System.out.println("Exception caught");
         }
 
@@ -220,6 +244,7 @@ public class ProgramController {
                 statesRepository.logProgramStateExec(prg);
             }
             catch (IOException ioe){
+                errorEncountered=true;
                 ioe.printStackTrace();
             }
         });
@@ -271,8 +296,8 @@ public class ProgramController {
                 Alert alert=new Alert(Alert.AlertType.CONFIRMATION);
                 alert.setContentText("PROGRAM HAS FINISHED!" + e.getMessage());
                 alert.showAndWait();
-
             }
+
             executor.shutdownNow();
         }
     }

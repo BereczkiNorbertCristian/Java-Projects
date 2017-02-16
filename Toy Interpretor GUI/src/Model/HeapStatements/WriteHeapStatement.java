@@ -1,6 +1,7 @@
 package Model.HeapStatements;
 
 import Collections.Heap;
+import Collections.IHeap;
 import Collections.IToyMap;
 import Exceptions.DivisionByZeroException;
 import Exceptions.KeyNotFoundMapException;
@@ -32,7 +33,7 @@ public class WriteHeapStatement implements IStatement,Serializable {
     @Override
     public ProgramState execute(ProgramState programState) throws VariableNotDefinedException,DivisionByZeroException{
 
-        Heap<Integer> heap=programState.getHeap();
+        IHeap<Integer> heap=programState.getHeap();
         IToyMap<String,Integer> symbolTable=programState.getSymbolTable();
         Integer address;
 

@@ -16,10 +16,18 @@ public class ProgramState implements Serializable {
     private IToyMap<String, Integer> symbolTable;
     private IToyList<String> out;
     private UniqueTrie uniqueNumbersSet;
-    private IToyMap<Integer,Pair<String,BufferedReader>> fileTable;
-    private Heap<Integer> heap;
+    private IFileTable fileTable;
+    private IHeap<Integer> heap;
     private transient final String fileSerializableName="test.ser";
     private final int programId;
+    private ILockTable lockTable;
+
+    public void setLockTable(ILockTable lockTable){
+        this.lockTable=lockTable;
+    }
+    public ILockTable getLockTable(){
+        return this.lockTable;
+    }
 
     public int getProgramId() {
         return programId;
@@ -42,11 +50,11 @@ public class ProgramState implements Serializable {
     }
 
 
-    public IToyMap<Integer, Pair<String, BufferedReader>> getFileTable() {
+    public IFileTable getFileTable() {
         return fileTable;
     }
 
-    public void setFileTable(IToyMap<Integer, Pair<String, BufferedReader>> fileTable) {
+    public void setFileTable(IFileTable fileTable) {
         this.fileTable = fileTable;
     }
 
@@ -56,7 +64,7 @@ public class ProgramState implements Serializable {
     public ProgramState(IToyStack<IStatement> executionStack,
                         IToyMap<String, Integer> symbolTable,
                         IToyList<String> out,
-                        IToyMap<Integer,Pair<String,BufferedReader>> fileTable,
+                        IFileTable fileTable,
                         int programId) {
 
         this.executionStack = executionStack;
@@ -102,11 +110,11 @@ public class ProgramState implements Serializable {
         this.out = out;
     }
 
-    public Heap getHeap(){
+    public IHeap getHeap(){
         return this.heap;
     }
 
-    public void setHeap(Heap<Integer> heap){
+    public void setHeap(IHeap<Integer> heap){
         this.heap=heap;
     }
 
@@ -115,12 +123,20 @@ public class ProgramState implements Serializable {
 
         String outString = "";
 
+        String lockStr="";
+
+        if(lockTable != null){
+            lockStr+=lockTable.toString()+"\n";
+        }
+
         outString += "PROGRAM ID:"+Integer.toString(programId)+"\n"+
                 "THE EXECUTION STACK:\n" + executionStack.toString() +
                 "THE SYMBOL TABLE:\n" + symbolTable.toString() +
                 "THE OUTPUT LIST:\n" + out.toString() +
                 "THE FILETABLE:\n" + fileTable.toString() +
                 "HEAP:\n" + heap.toString() +
+                "LOCK TABLE:\n" +
+                lockStr+
                 "\n"
         ;
 
